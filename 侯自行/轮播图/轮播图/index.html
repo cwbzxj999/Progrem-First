@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        .box{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        ul{
+            height: 470px;
+            width: 2950px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        li{
+            float: left;
+        }
+        .btns{
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+        }
+        .btns a{
+            display: block;
+            width: 30px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background-color: #000;
+            color: #fff;
+            opacity: 0.5;
+            float:left;
+        }
+        .btns a:last-child{
+            float: right;
+        }
+        .dotted{
+            position: absolute;
+            left: 80px;
+            bottom: 50px;
+        }
+        .dotted span{
+            display: block;
+            float: left;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .active{
+            background-color: #fff;
+            box-shadow: 0 0 2px 5px #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li><img src="img/1.jpg"></li>
+            <li><img src="img/2.jpg"></li>
+            <li><img src="img/3.jpg"></li>
+            <li><img src="img/4.jpg"></li>
+        </ul>
+        <div class="btns">
+            <a href="javascript:;" class="lbtn"><</a>
+            <a href="javascript:;" class="rbtn">></a>
+        </div>
+        <div class="dotted">
+
+        </div>
+    </div>
+    <script src="animate.js"></script>
+    <script>
+        var dotted=document.querySelector('.dotted');
+        var rbtn=document.querySelector('.rbtn');
+        var lbtn=document.querySelector('.lbtn');
+        var ul=document.querySelector('ul');
+        var img_index=0;
+
+        creatSpan();
+
+        var last_li=document.createElement('li');
+        var img1=document.createElement('img');
+        img1.src='img/1.jpg';
+        last_li.appendChild(img1);
+        ul.appendChild(last_li);
+
+        rbtn.onclick=function(){       
+            img_index++;
+            if(img_index==4){
+                img_index=0;
+                ul.style.left='0';
+            }
+            animation(ul,ul.offsetLeft,-img_index*590,50,20);
+
+            getDotted();
+                    
+        }
+
+        lbtn.onclick=function(){
+            
+            if(img_index==0){
+                img_index=4;
+                ul.style.left='-2360px';
+            }
+            img_index--;
+            animation(ul,ul.offsetLeft,-img_index*590,50,20);
+            getDotted();
+        }
+        
+
+
+        // 创建小圆点
+        function creatSpan(){
+            for(var i=0;i<ul.children.length;i++){
+            var span=document.createElement('span');
+            if(i==0){
+                span.className='active';
+            }
+            // 调用点击小圆点切换函数
+            span.pic_index=i;
+            span.onclick=move;
+            dotted.appendChild(span);
+            }
+        }
+
+        // 点击小圆点切换
+        function move(){
+            img_index=this.pic_index;
+            animation(ul,ul.offsetLeft,-img_index*590,50,20);
+            getDotted();
+        }
+
+
+        
+            // for(var i=0;i<ul.children.length;i++){
+            //     img_index=i;
+            //     dotted.children[i].onclick=function(){ 
+            //         animation(ul,ul.offsetLeft,-img_index*590,50,20);
+            //         getDotted();
+            //     }
+            // }
+
+        // 让小圆点根据图片切换样式
+        function getDotted(){
+                    for(var i=0;i<dotted.children.length;i++){
+                    dotted.children[i].className='';
+                    }
+                    dotted.children[img_index].className='active';
+            }
+
+// 自动播放
+        var elemId=null;
+        var box=document.querySelector('.box');
+        box.onmouseenter=function(){
+            clearInterval(elemId);
+        }
+        box.onmouseleave=function(){
+            Autoplay();
+        }
+        function Autoplay(){
+            elemId=setInterval(function(){
+                rbtn.click();
+            },1000)
+        }
+        Autoplay();
+    </script>
+</body>
+</html>

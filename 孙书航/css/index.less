@@ -1,0 +1,1028 @@
+// 头部
+.top {
+    width: 100%;
+    // height: 760px;
+    position: relative;
+   video {
+       width: 100%;
+       height: 100%;
+       source {
+        width: 100%;
+        height: 100%;
+       }
+   }
+   .top_nav {
+       position: relative;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      height: 40px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      .change {
+          display: block;
+          position: absolute;
+          left: 30px;
+          top: 5px;
+          height: 40px;
+          width: 47px; 
+          line-height: 36px;
+          color: white;
+          font-family: "楷体"; 
+          font-size: 18px;
+          color: #fbd52d; 
+          text-align: center;
+          background: url('../imgs/three_sm.png') no-repeat;   
+      }
+      .top_list {
+        width: 805px;
+        margin: 0 auto;
+        .top_bgimg {
+           width: 805px;
+           height: 40px;
+           .top_left_one {
+               display: block;
+               height: 40px;
+               width: 150px;
+               img {
+                   height: 90%;
+                   width: 90%;
+                   margin-top: 2px;
+               }  
+           }
+           .top_left_two_ul {
+               height: 40px;
+               width: 500px;
+               line-height: 40px;
+               float: left;
+               .top_left_two_li {
+                   float: left;
+                   width: 70px;
+                   text-align: center;
+                //    margin: 0 7px;
+                    ul {
+                        line-height: 25px;
+                        padding-bottom: 10px;
+                        width: 70px;
+                        background: rgba(0, 0, 0, 0.6)
+                    }
+               }
+           }
+           .top_right {
+               
+               margin: 7px 40px 0 0;
+               height: 25px;
+               width: 70px;
+               .top_left_small_yellow {
+                   height: 100%;
+                   width: 12px;
+               }
+               .top_nav_right_small {
+                   width: 30px;
+                   height: 100%;
+                   background-image:linear-gradient(
+                   to top,
+                   #fbd52d,
+                   #ffea03,
+               );
+                   a {
+                   display: block;
+                   width: 100%;
+                   height: 100%;
+                   line-height: 25px;
+                   text-align: center;
+                   color: black;
+               }
+               }
+               .top_right_small_yellow {
+                   height: 100%;
+                   width:12px;
+               }
+               
+               .yellow_one {
+                   height: 26px;
+                   width: 15px;
+                   position: absolute;
+                   top: 0;
+                   left: -14px;
+                   img {
+                       height: 100%;
+                       width: 100%;
+                   }
+               }
+               .yellow_two {
+                   height: 26px;
+                   width: 15px;
+                   position: absolute;
+                   top: 0;
+                   right: -14px;
+                   img {
+                       height: 100%;
+                       width: 100%;
+                   }
+               }
+         }
+      }
+    }
+          //设置阴影畸形盒子
+      .top_black {
+          position: absolute;
+          z-index: 2;
+          top: 40px;
+          width: 272px;
+        //   height: 20px;
+          border-top:15px solid rgba(0, 0, 0, 0.6);
+          border-right: 15px solid  rgba(0, 0, 0, 0);
+      }
+      .top_blacks {
+        position: absolute;
+        z-index: 2;
+        top: 40px;
+        right: 0;
+        width: 272px;
+        border-top:15px solid rgba(0, 0, 0, 0.6);
+        border-left: 15px solid  rgba(0, 0, 0, 0);
+    }
+ }
+//  视频中显示的文字图片
+   .top_box {
+       position: absolute;
+       bottom: 100px;
+       left: 0;
+       width: 100%;
+       height: 130px;
+       padding: 0 40px;
+       box-sizing: border-box;
+       h1 {
+           font-size: 50px;
+           color: #fbd928;
+           margin-bottom: 20px;
+           text-shadow:3px 3px 1px #8fe8ee,2px  3px 9px  rgb(218, 172, 119);
+       }
+    //    视频上黄色盒子
+       .top_box_yellow {
+           margin-right: 30px;
+           width: 170px;
+           height: 40px;
+           transition:transform 0.8s;
+           .yellow_one {
+               width: 24px;
+               height: 40px;
+           }
+           .yellow_middle {
+               width: 120px;
+               height: 100%;
+               background-image:linear-gradient(
+                   to top,
+                   #fbd52d,
+                   #ffea03,
+               );
+               a {
+                   color: black;
+                   display: block;
+                   width: 100%;
+                   text-align: center;
+                   line-height: 40px;
+                   font-size: 18px;
+               } 
+           }
+           .yellow_two {
+            width: 24px;
+            height: 40px;
+           }
+          
+       }
+       .top_box_yellow:hover {
+        transform: translate(0,-7px);
+       }
+       .top_box_blue {
+        width: 170px;
+        height: 40px;
+        transition:transform 0.8s;
+        .blue_one {
+            width: 24px;
+            height: 40px;
+        }
+        .blue_middle {
+            width: 120px;
+            height: 34px;
+            border-top: 3px solid #49b9f9;
+            border-bottom: 3px solid #0293ff;
+            background-image:linear-gradient(
+               to top,
+                
+               #151413,
+               #323232,       
+        );
+            a {
+                color: white;
+                display: block;
+                width: 100%;
+                text-align: center;
+                line-height: 34px;
+                font-size: 18px;
+            } 
+        }
+        .blue_two {
+         width: 24px;
+         height: 40px;
+        }
+       
+       }
+       .top_box_blue:hover {
+        transform: translate(0,-7px);
+       }
+
+
+   
+   }
+// 两个蓝色定位
+.top_left_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    border-bottom: 50px #202d8d solid;
+    border-right: 50px solid rgba(0, 0, 0, 0);
+    img {
+        width: 86px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        right: -87px;
+    }
+}
+.top_right_bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border-bottom: 50px #1a2889 solid;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    img {
+        width: 86px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: -87px;
+    }
+}
+
+}
+
+
+// 第二部分蓝色大背景
+.two_blue {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+        height: 750px;
+    }
+    h3 {
+        width: 100%;
+        height: 50px;
+        font-size: 30px;
+        color: #fbd52d;
+        text-align: center;
+        position: absolute;
+        top: 30px;        
+    }
+    // 蓝色中间主图
+    .two_middle {
+        width: 600px;
+        height: 360px;
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        margin-left: -300px;
+        overflow: hidden;
+        a {
+            display: block;
+            width: 600px;
+            height: 360px;           
+            img {
+                width: 100%;
+                height: 100%;
+                transition:transform 1s;
+            }
+            .two_middle_news {
+                padding-top: 8px;
+                padding-left: 10px;
+                box-sizing: border-box;
+                height: 70px;
+                width: 100%;
+                position: absolute;
+                bottom: -20px;
+                left: 0px;
+                background: linear-gradient(
+                    rgba(0,0,0,0),
+                    rgba(0,0,0,1)
+                );
+                transition:transform 1s;
+                z-index: 4;
+                h5 {
+                    font-size: 12px;
+                    color: #0293ff;
+                    font-family: '宋体';
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+        // 遮盖盒子
+        .dis_black {
+            display: none;
+            width: 600px;
+            height: 360px;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            margin-left: -300px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+    }
+   
+    
+    
+    // 下方两个小图
+    .two_bottom {
+        width: 600px;
+        height: 190px;
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        margin-left: -300px;
+        overflow: hidden;
+        .gun {
+            width: 295px;
+            height: 190px;
+            overflow: hidden;
+          a {
+            display: block;
+            height: 100%;
+            width: 100%;
+           
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition:transform 1s;
+                }
+                .gun_wenzi {
+                    position: absolute;
+                    bottom: -20px;
+                    left: 0;
+                    width: 100%;
+                    height: 100px;
+                    padding: 20px 0 0 10px;
+                    box-sizing: border-box;
+                    background: linear-gradient(
+                    rgba(0,0,0,0),
+                    rgba(0,0,0,1),
+                );
+                z-index: 4;
+                transition:transform 1s;
+                h5 {
+                    font-size: 12px;
+                    color: #0293ff;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                }
+            }
+            // 小图遮盖盒子
+            .small_black {
+                display: none;
+                width: 295px;
+                height: 190px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.7);
+            }
+        }
+        .god {
+            width: 295px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+             a {
+                 display: block;
+                 width: 100%;
+                 height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition:transform 1s;
+                }
+                .gun_wenzis {
+                    z-index: 4;
+                    position: absolute;
+                    bottom: -20px;
+                    right: 0;
+                    width: 100%;
+                    height: 90px;
+                    padding: 20px 0 0 10px;
+                    box-sizing: border-box;
+                    background: linear-gradient(
+                    rgba(0,0,0,0),
+                    rgba(0,0,0,1),
+                );
+                transition:transform 1s;
+                h5 {
+                    font-size: 12px;
+                    color: #0293ff;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                }
+            }
+            .right_black {
+                display: none;
+                width: 295px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.7);
+            }
+        }
+     
+        // 样式
+    }
+    .two_middle:hover img{
+        transform: scale(1.1,1.1);
+    }
+    .two_middle:hover .two_middle_news{
+        transform: translate(0,-20px;)
+    }
+    .two_middle:hover .dis_black {
+        display: block;
+    }
+    // 小图遮盖效果
+    .gun:hover img{
+        transform: scale(1.1,1.1);
+    }
+    .gun:hover .gun_wenzi{
+        transform: translate(0,-10px;)
+    }
+    .gun:hover .small_black {
+        display: block;
+    }
+    // 小图右侧
+    .god:hover img{
+        transform: scale(1.1,1.1);
+    }
+    .god:hover .gun_wenzis{
+        transform: translate(0,-10px;)
+    }
+    .god:hover .right_black {
+        display: block;
+    }
+
+
+
+}
+
+// 第三部分黑色背景
+.three_black {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    background: url('../imgs/bg-grunge.png') no-repeat;
+    background-size:cover;
+    padding-top: 20px;
+    box-sizing: border-box;
+    .three_h {
+        text-align: center;
+        height: 70px;
+        h2 {
+            color: #ffea02;
+            font-size: 30px;
+        }
+
+    }
+    .wrap {
+        position: relative;
+        width: 1200px;
+        height: 360px;
+        margin: 10px auto;
+        .content {
+            position: absolute;
+            width: 1200px;
+            height: 360px;
+            li{
+                position: absolute;
+                background-size: 100% 100%;
+                cursor: pointer;
+            }
+        }
+        a {
+            position: absolute;
+            display: none;
+            z-index: 2;
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            margin-top: -30px;
+            font: 36px/60px "宋体";
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background: rgb(255, 100, 0);
+            background: rgba(255, 100, 0, .6);
+            transition: background 1s ease;
+        }
+        a:hover {
+            background: rgb(255, 100, 0);
+        }
+        .prev {
+            left: 30px;
+        }
+        .next {
+            right: 30px;
+        }
+    }
+    
+
+
+
+    .btn {
+        width: 116px;
+        height: 40px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -60px;
+        border: 4px solid #48bcfb;
+        border-radius: 15px 0 15px 0;
+        box-shadow: 3px 3px 2px rgb(47, 148, 179);
+        transition:transform 0.8s;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+        }
+        
+    }
+    .btn:hover {
+        transform: translate(0,-7px);
+    }
+}
+
+// 枪支介绍
+.add_blue {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('../imgs/add_bg.jpg') no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    box-sizing: border-box;
+    h1 {
+        text-align: center;
+        line-height: 50px;
+        color: #ffea02;
+        font-size: 30px;
+    }
+    .add_ul {
+        height: 420px;
+        width: 1280px;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        margin-left: -640px;
+        li {
+            float: left;
+            height: 170px;
+            width: 300px;
+            margin: 20px 15px 0 0;
+            // background-color: #019ef9;
+            transition:transform 1s;
+            img {
+                height: 100%;
+                width: 100%;
+                // opacity: 0.5;
+            }
+        }
+        li:hover img{
+            transform: scale(1.2,1.2);
+        }
+    }
+}
+
+// 第四部分花图
+.four_flower {
+    width: 100%;
+    height: 450px;
+    background: url('../imgs/vip-bg.jpg') no-repeat;
+    background-size: cover;
+    .four_w {
+        height: 100%;
+        width: 910px;
+        margin: 0 auto;
+        // background-color: coral;
+        .four_vip {
+            position: relative;
+            height: 100%;
+            width: 400px;
+            // background: darkorchid;
+            img {
+                height: 150px;
+                width: 100px;
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                margin-left: -50px;
+            }
+            .four_middle {
+                position: absolute;
+                top: 180px;
+                line-height: 26px;
+                text-align: center;
+                h1 {
+                    color: #fbd52d;
+                    font-size: 32px;
+                    // font-weight: 400;
+                    line-height: 36px;
+                }
+                h2 {
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 36px;
+                }
+            }
+            .learn {
+                width: 140px;
+                height: 30px;
+                position: absolute;
+                bottom: 40px;
+                left: 20px;
+                border: 4px solid #48bcfb;
+                border-radius: 15px 0 15px 0;
+                box-shadow: 6px -5px 2px rgb(27, 88, 107);
+                transition:transform 0.8s;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 30px;
+                    font-size: 18px;
+                }
+            }
+            .learn:hover {
+                transform: translate(0,-7px);
+            }
+            .more {
+                width: 140px;
+                height:30px;
+                position: absolute;
+                bottom: 40px;
+                right: 20px;
+                border: 4px solid #48bcfb;
+                border-radius: 15px 0 15px 0;
+                box-shadow: 6px -5px 2px rgb(27, 88, 107);
+                transition:transform 0.8s;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 30px;
+                    font-size: 18px;
+                }
+            }
+            .more:hover {
+                transform: translate(0,-7px);
+            }
+        }
+        .four_purple {
+            height: 100%;
+            width: 510px;
+            background: url('../imgs/vip-characters.png') no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+// 第五部分游戏介绍
+.five_cosmos {
+    position: relative;
+    height: 720px;
+    width: 100%;
+    background: url('../imgs/gamefeatures-bg.jpg') no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    box-sizing: border-box;
+    h1 {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        color: #ffea02;
+        font-size: 36px;
+        font-family: '宋体';
+    }
+    .five_four_middle {
+        
+        height: 525px;
+        width: 850px;
+        position: absolute;
+        top: 85px;
+        left: 50%;
+        margin-left: -425px;
+        // 存放中间大图
+        .five_imgs {
+            position: relative;
+            height: 450px;
+            width: 100%;
+            border: 2px solid #019ef9;
+            .bottom_none {
+                height: 100%;
+                width: 100%;
+                display: none;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+           
+        }
+        // 切换表格
+        .five_tab {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            height: 40px;
+            width: 100%;
+            ul {
+                height: 100%;
+                width: 100%;
+                li {
+                    float: left;
+                    height: 40px;
+                    width: 160px;
+                    border: 4px solid #13a3f1;
+                    border-radius: 20px 0 20px 0;
+                    background-color: black;
+                    text-align: center;
+                    line-height: 40px;
+                    font-size: 18px;
+                    margin: 0 20px;
+                    a {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        color: white
+                    }
+                }
+                .red {                        
+                    background-color: white;
+                    a{
+                        color: black;
+                    }
+                }
+            }
+        }
+        // 文字介绍
+        .five_bot {
+            height: 150px;
+            width: 600px;
+            // background-color: hotpink;
+            position: absolute;
+            bottom: -130px;
+            left: 50%;
+            margin-left: -300px;
+            .bot_none {
+                display: none;
+                h1 {
+                    color: white;
+                }
+                p {
+                    line-height: 20px;
+                }
+            }
+            
+        }
+       
+    }
+}
+
+// 第六部分天空
+.six_sky {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: url('../imgs/footer-bg.jpg') no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    .six_top {
+        position: relative;
+        height: 500px;
+        width: 700px;
+        // background-color: lightpink;
+        margin: 0 auto;
+        .six_top_new {
+            height: 25%;
+            width: 50%;
+            position: absolute;
+            top:50%;
+            margin-top: -100px;
+            left: 460px;
+            h1 {
+                font-size: 36px;
+                color: #fbd52d;
+                font-weight: 400;
+            }
+            p {
+                font-size: 24px;
+                line-height: 36px;
+            }
+            .six_news {
+                height: 55px;
+                width: 170px;
+                position: relative;
+                transition:transform 0.7s;
+                margin-top: 30px;
+                img {
+                    height: 100%;
+                    width: 25px;
+                }
+                .six_one {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .six_middle {
+                    height: 100%;
+                    width: 120px;
+                    line-height: 55px;
+                    text-align: center;
+                    background-image:linear-gradient(
+                        to top,
+                        #F9CE34,
+                        #ffea03,
+                    );
+                    position: absolute;
+                    top: 0;
+                    left: 25px;
+                    
+                    a {
+                        height: 100%;
+                        width: 100%;
+                        display: block;
+                        font-size: 20px;
+                    }
+                    a:hover {
+                        color: #151413;
+                        font-size: 22px;
+                    }
+                }
+                .six_two {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            .six_news:hover{
+                transform: translate(0,-10px;)
+            }
+        }
+    }
+
+    // 两部分阴影
+    .six_sun {
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        bottom: 230px;
+        .s_left {
+            width: 300px;
+            border-bottom: 40px solid rgba(0, 0, 0, 0.7);
+            border-right: 50px solid rgba(0, 0, 0, 0);
+        }
+        .s_right {
+            width: 300px;
+            border-bottom: 40px solid rgba(0, 0, 0, 0.7);
+            border-left: 50px solid rgba(0, 0, 0, 0);
+        }
+    }
+    // 六中阴影部分
+    .six_bottom {
+        height: 230px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        bottom: 0;
+        .bot_mid {
+            width: 500px;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 10px;
+            box-sizing: border-box;
+            h1 {
+                font-size: 40px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            .read {
+                height: 40px;
+                width: 280px;
+                border: 3px solid white;
+                margin-left: 110px;
+                margin-top: 50px;
+                border-radius: 30px 0 30px 0;
+                transition:transform 0.8s;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    line-height: 40px;
+                    font-size: 30px;
+                }
+            }
+            .read:hover {
+                transform: translate(0,-7px);
+            }
+        }
+    }
+}
+
+// 第七部分底部
+.seven {
+    height: 270px;
+    width: 100%;
+    background: black;
+    position: relative;
+    padding: 0 70px;
+    box-sizing: border-box;
+    .seven_img {
+        height: 100px;
+        width: 200px;
+        position: absolute;
+        top: 40px;
+        left: 70px;
+    }
+    .book_one {
+        position: absolute;
+        top: 40px;
+        left: 300px;
+        a {
+            color: #fbd928;
+            font-size: 12px;
+        }
+    }
+    .book_two {
+        position: absolute;
+        top: 60px;
+        left: 298px;
+    }
+    .seven_logo {
+        height: 60px;
+        width: 600px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin-left: -300px;
+        // background-color: cyan;
+        ul {
+            height: 100%;
+            width: 100%;           
+            li {
+                float: left;
+                margin-left: 20px;
+            }
+            li:nth-child(3){
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+// 第九部分
+.cd-top{
+    width: 138px;
+    height: 200px;
+    background: url('../imgs/people.png') no-repeat;
+    text-align: center;
+    line-height: 10px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 3px;
+    z-index: 15;
+    font-size: 16px;
+    color: #F9CE34;
+}

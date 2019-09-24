@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>王牌战士</title>
+    <link rel="stylesheet" href="./css/bass.css">
+    <link rel="stylesheet" href="./wpzs.less">
+    <link rel="stylesheet" href="./wpzs.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/aside.js"></script>
+   
+
+  <style type="text/css">
+    .poster-main{
+        position: relative;
+        margin: 50px auto;
+    }
+    .poster-main .poster-list .poster-item{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .poster-main .poster-btn{
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+    }
+    .poster-main .poster-prev-btn{
+        left: 0;
+        background: url("images/btn_l.png") no-repeat center center;
+    }
+    .poster-main .poster-next-btn{
+        right: 0;
+        background: url("images/btn_r.png") no-repeat center center;
+    }
+  
+
+</style>
+</head>
+
+<body>
+
+<!-- 外包大盒子 -->
+    <div class="big">
+<!-- 导航部分 -->
+        <div class="nav">
+            <div class="w clear">
+                <div class="nav_list">
+                    <ul class="top_nav ">
+                        <a href="javascript:;" class="logo"></a>
+                        <li><a href="../uplay/index.html" target="_blank">
+                                <em>官方首页</em>
+                                <span>HOMEPAGE</span>
+                            </a></li>
+                        <li><a href="javascript:;">
+                                <em>新闻公告</em>
+                                <span>NEWS</span>
+                            </a>
+                        </li>
+                        <li><a href="javascript:;">
+                                <em>视听中心</em>
+                                <span>VISION</span>
+                            </a>
+                        </li>
+                        <li><a href="javascript:;">
+                                <em>王牌攻略</em>
+                                <span>COLLEAGUE</span>
+                            </a>
+                        </li>
+                        <li><a href="javascript:;">
+                                <em>奖励兑换</em>
+                                <span>STRATEGY</span>
+                            </a>
+                        </li>
+                        <li><a href="javascript:;">
+                                <em>王牌论坛</em>
+                                <span>HOMEPAGE</span>
+                            </a>
+                        </li>
+                        <a href=" ../uplay/index.html" target="_blank" class="shouye">
+                             <img src="./images/index.png" alt="">
+                            </a>
+                       
+                    </ul>
+
+                </div>
+                <div class="nav_con">
+                    <ul class="sub_inner">
+                        <li><a href="javascript:;">官网首页</a></li>
+
+                        <li>
+                            <a href="javascript:;">最新</a>
+                            <a href="javascript:;">新闻</a>
+                            <a href="javascript:;">公告</a>
+                            <a href="javascript:;">活动</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">游戏壁纸</a>
+                            <a href="javascript:;">官方视频</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">选手资料</a>
+                            <a href="javascript:;">角色攻略</a>
+                            <a href="javascript:;">模式攻略</a>
+                            <a href="javascript:;">地图攻略</a>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:;">CDK兑换</a>
+                            <a href="javascript:;">预约奖励领取</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">王牌论坛</a>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+        </div>
+<!-- 背景图部分 -->
+        <div class="tu_big">
+            <canvas id="canvas" width="1300px" height=""></canvas>
+            <div id="div">
+
+      
+                <div class="yuan"></div>
+            </div>     
+            <div class="lin">
+                <div class="qt">^</div>
+            </div>
+            <div class="loadbtn">
+              <img src="./images/xuan-andriod.png" alt="">
+              <img src="./images/xuan-ios.png" alt="">
+
+            </div>
+         
+
+        </div>
+      
+<!-- 背景视频 -->
+        <video class="scale-video bg-video" id="video"
+            src="./images/bg_video.mp4"
+            muted="" autoplay="" loop="" poster="//game.gtimg.cn/images/wpzs/cp/a20180716nb/bg-0.jpg" data-autoplay=""
+        style="height: 937px; width: 1665.78px; margin-left: -100.8889px;"></video> 
+<!-- 右边固定定位部分 -->
+        <div class="right-nav" style="display: none;">
+                    <!-- 线 -->
+                    <div class="line"></div>
+                    <!-- 二维码部分 -->
+                    <img src="./images/erweima/qr_code.png" alt="二维码" class="erweima">
+                    <!-- 安卓 -->
+                    <a href="javascript:;" class="andriod" onclick="PTTSendClick('btn','andriod-download','安卓系统');">
+                    </a>
+                    <!-- 苹果 -->
+                    <a href="javascript:;" class="ios" >
+                    </a>
+                    <!-- 文字区域 -->
+                    <ul class="word" id="myMenu">
+                        <li data-menuanchor="firstPage" class="active">
+                            <a href="#newtwo" >最新公告</a> </li>
+                        <li data-menuanchor="secondPage" class="">
+                            <a href="#newthree" > 选手介绍</a> </li>
+                        <li data-menuanchor="thirdPage" class="">
+                
+                            <a href="#newfour">同人作品</a></li>
+                        <li data-menuanchor="fourthPage" class="">
+                            <a href="#newfive"> 游戏特色</a>
+                        </li>
+                    </ul>
+                    <!-- 下载站 -->
+                    <a href="javascript:;" class="xzyx"></a>
+                
+                
+                    <!-- 右箭头 -->
+                    <a class="right-arrow"></a>
+        </div>
+<!-- 第二部分 -->
+        <div class="section2" id = "newtwo">
+            <div class="m_cont w">
+                <div class="m_cont_main">
+                    <!--分成三部分  -->
+                    <!-- 左边轮播图 -->
+
+
+
+
+                    <div class="lb">
+                            <ul>
+                                <li><img src="images/imgs/1.jpeg" alt=""></li>
+                                <li><img src="images/imgs/2.jpeg" alt=""></li>
+                                <li><img src="images/imgs/3.jpeg" alt=""></li>
+                                <li><img src="images/imgs/4.jpeg" alt=""></li>
+                            </ul>
+                            <div class="btns">
+                                <a href="javascript:;" class="lbtn"><</a>
+                                <a href="javascript:;" class="rbtn">></a>
+                            </div>
+                 
+                            <div class="dotteds">
+                                
+                            </div>
+                        </div>
+
+
+
+                    <!-- 右边视频区域 -->
+                    <div class="rvideo  sp onAnimate animated fadeInLeft" data-animation="fadeInLeft">
+                       <a href="javascript:;" class="play"></a>
+                       <div class="shadow-box"></div>
+
+                    </div>
+
+                    <!-- 下部文字区域 -->
+                    <!-- 分成两部分，左边图片一部分， 右边文字一部分 -->
+                    <div class="bottom_des person-news onAnimate animated fadeInUp" data-animation = "fadeInUp">
+                            <div class="person_img"></div>
+                            <div class="news_content">
+                                <!-- 右侧内容顶部盒子 -->
+                                <div class="topTab">
+                                      <ul class="clear">
+                                          <li class="fl on">
+                                              <a href="javascript:;" class="newest hd"></a>
+                                          </li>
+                                          <li class="fl">
+                                             <a href="javascript:;" class="news-list hd"></a>
+                                          </li>
+                                          <li class="fl">
+                                            <a href="javascript:;" class="notice hd"></a>
+                                          </li>
+                                          <li class="fl">
+                                            <a href="javascript:;" class="activity hd"></a>
+                                         </li>
+                                            </ul>
+                                </div>
+                                <div class="bottomTab">
+                                    <div class="tab-panel">
+                                        <ul>
+                                            <li><a href="javascript:;"><span class="text">王牌战士商城“时装惊喜礼包”概率公示</span>
+                                                <span class="time">2019-08-30</span></a></li>
+                                            <li><a href="javascript:;"><span class="text">“沙滩幸运星”活动概率公示</span>
+                                                <span class="time">2019-08-30</span></a></li>
+                                            <li><a href="javascript:;"><span class="text">王牌战士8月29日更新公告</span>
+                                                <span class="time">2019-08-28</span></a></li>
+                                            <li><a href="javascript:;"><span class="text">王牌战士外挂作弊处罚公示（更新至8月29日）</span>
+                                                <span class="time">2019-08-26</span></a></li>
+                                            <li><a href="javascript:;"><span class="text">《王牌战士》安全专项打击公告</span>
+                                                <span class="time">2019-08-24</span></a></li>
+                                        </ul>
+                                        <div class="more">
+                                                <a href="javascript:;">
+                                                    
+                                                          <span >查看更多</span>
+                                                          <span class="more_t" >>></span>
+                                                 </a>
+
+                                        </div>
+                                       
+                                    </div>
+                                 
+                                    
+                                    
+
+
+                                </div>
+
+
+
+                            </div>
+                    </div>
+                  
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+<!---三部分=-->
+        <div class="hero_section clear" id="newthree">
+    <div class="hero">
+            <div class="hero-left onAnimate animated fadeInLeft" data-animation="fadeInLeft">
+                    <div class="hero-list"> 
+                       <div class="h_line">
+                       </div>
+                     
+                    </div>
+
+                    <ul class="hero-lists">
+                        <li class="h_icon"><img src="./images/hero_img/hero-icon1.png"" alt="">
+                                     <img src="./images/hero_img/hero-on-icon1.png" alt="">
+                        </li>
+                        <li class="h_icon"><img src="./images/hero_img/hero-icon2.png" alt="">
+                            <img src="./images/hero_img/hero-on-icon2.png" alt=""></li>
+                       
+                        <li class="h_icon" ><img src="./images/hero_img/hero-icon4.png" alt="">
+                            <img src="./images/hero_img/hero-on-icon4.png" alt=""></li>
+
+                        <li class="h_icon"><img src="./images/hero_img/hero-icon5.png" alt="">
+                            <img src="./images/hero_img/hero-on-icon5.png" alt=""></li>
+
+                        <li class="on h_icon "><img src="./images/hero_img/hero-icon6.png" alt="">
+                            <img src="./images/hero_img/hero-on-icon6.png" alt=""></li>
+
+                    </ul>
+                    <a href="javascript:;" class=" smore"></a>
+            </div>
+        
+            <div class="voice clear">
+                        <a class="voice-ico fl " href="javascript:;">
+                            
+                                <audio src="./images/audio/hero_audio.mp3" id="audio"></audio>
+                        </a>
+                      
+                        <div class="voice-text ">
+                            <span>语音</span>
+                            <span>voice</span>
+                        </div>
+            </div>
+
+ <!===============================-- 英雄=--------------------------- -->
+
+
+
+
+
+
+
+
+            <div class="biao  loo1 " style="display: block;">
+            <div class="hero-list-person clear">
+                <div class="hero-person hero1" style="display: block;">
+                </div>
+              
+            </div>
+
+            
+
+            <div class="hero-desc  onAnimate animated fadeInRight " data-animation="fadeInRight">
+                
+                    <div class="top-left">
+                    
+                        <p >井川家族</p>
+                        <img src="./images/hero_img/h_one.png" width="84" height="117" alt="井川家族">
+                  
+                                    
+                    </div>
+
+                        <div class="desc-top">
+                                <div class="desc-name">
+                                    <strong>火花</strong>
+                                    <em>Spark</em>
+                                    <div class="line spr ">
+                                    </div></div>
+                                    <p>樱身为井川家族大小姐，不愿顺从家族继承人的安排，反而对父亲奇怪的机甲研究很感兴趣。父亲送她来大陆念书，临走前还将改装后的生物装甲送给了她。事后她便接到父亲离奇失踪的消息，小樱随即穿上了机甲，与MAU学员龙、幽灵一同调查真相</p>
+
+<!-- ========================第二块-------------------------------- -->
+                <div class="hero-sp">
+                     <div class="box-img">
+                         <img class="hero-sp-img" onclick="showVbox('f0901cm1ju6')" src="./images/hero_img/h_onep.png" width="172" height="87" alt="视频">
+                         <em class="shade"></em>
+                     </div>
+                     <div class="hero-sp-des">
+                         <span class="spr">定位</span>
+                         <ul>
+                             <li>压制</li>
+                         </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-middles">
+                        <ul><li><p class="merit"><span class="you"> 优点：</span><span>武器伤害高 阻挡伤害</span></p></li></ul></div>
+                    <div class="desc-bottom">
+                        <div class="skill">角色技能</div><ul class="skills">
+                            <li data-name="火力压制"  onclick="showVbox('q0900i2tru9')"><img src="./images/hero_img/a.png" class="skills-1"><span>火力压制</span></li>
+                            <li data-name="能量屏障"  onclick="showVbox('n0874x8jkir')"><img src="./images/hero_img/b.png" class="skills-2"><span>能量屏障</span></li>
+                            <li data-name="机械灵感"  onclick="showVbox('c0831u01vg7')"><img src="./images/hero_img/c.png" class="skills-3"><span>机械灵感</span></li></ul></div>
+                </div>
+
+            </div>
+
+
+            <div class="biao  loo2 " style="display: none;">
+                    <div class="hero-list-person clear">
+                      
+                         <div class="hero-person hero2" ></div>
+                      
+                    </div> 
+        
+                    
+        
+                    <div class="hero-desc  onAnimate animated fadeInRight " data-animation="fadeInRight">
+                        
+                            <div class="top-left">
+                            
+                                <p >SUE</p>
+                                <img src="./images/hero_img/h_two.png" width="84" height="117" alt="井川家族">
+                          
+                                            
+                            </div>
+        
+                                <div class="desc-top">
+                                        <div class="desc-name">
+                                            <strong>龙</strong>
+                                            <em>Loong</em>
+                                            <div class="line spr ">
+                                            </div></div>
+                                            <p>赵海龙是一名MAU的年轻士兵。极具战斗天赋的他在Ace Force大赛的前夕接到了世界七大财团之中井川家族委托，并最终和井川家族的大小姐——井川樱一同前往Ace Force大赛执行调查任务……</p>
+        
+        <!-- ========================第二块-------------------------------- -->
+                        <div class="hero-sp">
+                             <div class="box-img">
+                                 <img class="hero-sp-img" onclick="showVbox('f0901cm1ju6')" src="./images/hero_img/h_twop.png" width="172" height="87" alt="视频">
+                                 <em class="shade"></em>
+                             </div>
+                             <div class="hero-sp-des">
+                                 <span class="spr">定位</span>
+                                 <ul>
+                                     <li>游击</li>
+                                 </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-middles">
+                                <ul><li><p class="merit"><span class="you"> 优点：</span><span> 枪械稳定 脱战回血</span></p></li></ul></div>
+                            <div class="desc-bottom">
+                                <div class="skill">角色技能</div><ul class="skills">
+                                    <li data-name="火力压制"  onclick="showVbox('q0900i2tru9')"><img src="./images/hero_img/d.png" class="skills-1"><span>英雄时刻</span></li>
+                                    <li data-name="能量屏障"  onclick="showVbox('n0874x8jkir')"><img src="./images/hero_img/h.png" class="skills-2"><span>追踪飞弹</span></li>
+                                    <li data-name="机械灵感"  onclick="showVbox('c0831u01vg7')"><img src="./images/hero_img/k.png" class="skills-3"><span>战场适应</span></li></ul></div>
+                        </div>
+        
+            </div>
+
+            <div class="biao  loo3 " style="display: none;">
+                    <div class="hero-list-person clear">
+                        <div class="hero-person hero4" ></div>
+                      
+                    </div>
+        
+                    
+        
+                    <div class="hero-desc  onAnimate animated fadeInRight " data-animation="fadeInRight">
+                        
+                            <div class="top-left">
+                            
+                                <p >SUE</p>
+                                <img src="./images/hero_img/h_three.png" width="84" height="117" alt="sue">
+                          
+                                            
+                            </div>
+        
+                                <div class="desc-top">
+                                        <div class="desc-name">
+                                            <strong>幽灵</strong>
+                                            <em>Ghost</em>
+                                            <div class="line spr ">
+                                            </div></div>
+                                            <p>性格稳重的李正宇从小就有着浓厚的英雄情结，立志继承已经去世的姐姐的遗志，成为优秀的狙击手。在一次任务中，他调查到姐姐死亡的相关信息，为此，他和赵海龙一同前往Ace Force大赛，想要查明真相。</p>
+        
+        <!-- ========================第二块-------------------------------- -->
+                        <div class="hero-sp">
+                             <div class="box-img">
+                                 <img class="hero-sp-img" onclick="showVbox('f0901cm1ju6')" src="./images/hero_img/h_threep.png" width="172" height="87" alt="视频">
+                                 <em class="shade"></em>
+                             </div>
+                             <div class="hero-sp-des">
+                                 <span class="spr">定位</span>
+                                 <ul>
+                                     <li>狙击</li>
+                                 </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-middles">
+                                <ul><li><p class="merit"><span class="you"> 优点：</span><span>武器伤害高 阻挡伤害</span></p></li></ul></div>
+                            <div class="desc-bottom">
+                                <div class="skill">角色技能</div><ul class="skills">
+                                    <li data-name="火力压制"  onclick="showVbox('q0900i2tru9')"><img src="./images/hero_img/e.png" class="skills-1"><span>鹰眼</span></li>
+                                    <li data-name="能量屏障"  onclick="showVbox('n0874x8jkir')"><img src="./images/hero_img/f.png" class="skills-2"><span>鬼魅</span></li>
+                                    <li data-name="机械灵感"  onclick="showVbox('c0831u01vg7')"><img src="./images/hero_img/g.png" class="skills-3"><span>狙击</span></li></ul></div>
+                        </div>
+        
+            </div>
+        
+            <div class="biao  loo4" style="display: none;">
+                    <div class="hero-list-person clear">
+                        <div class="hero-person hero5" >
+                        </div>
+                      
+                    </div>
+        
+                    
+        
+                    <div class="hero-desc  onAnimate animated fadeInRight " data-animation="fadeInRight">
+                        
+                            <div class="top-left">
+                            
+                                <p >中立选手</p>
+                                <img src="./images/hero_img/h_four.png" width="84" height="117" alt="中立选手">
+                          
+                                            
+                            </div>
+        
+                                <div class="desc-top">
+                                        <div class="desc-name">
+                                            <strong>特斯拉</strong>
+                                            <em>Spark</em>
+                                            <div class="line spr ">
+                                            </div></div>
+                                            <p>特斯拉的父亲凡塔因"时空实验”失败去世，达克斯·特斯拉接替父亲，小小年纪的他只想让父亲的“时空实验”再次成功。但最终，他来到了Ace Force，因为和实验有关的东西，似乎就在赛场上的某个选手之上……</p>
+        
+        <!-- ========================第二块-------------------------------- -->
+                        <div class="hero-sp">
+                             <div class="box-img">
+                                 <img class="hero-sp-img" onclick="showVbox('f0901cm1ju6')" src="./images/hero_img/h_fourp.png" width="172" height="87" alt="视频">
+                                 <em class="shade"></em>
+                             </div>
+                             <div class="hero-sp-des">
+                                 <span class="spr">定位</span>
+                                 <ul>
+                                     <li>压制</li>
+                                 </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-middles">
+                                <ul><li><p class="merit"><span class="you"> 优点：</span><span> 减速敌人 建造炮台</span></p></li></ul></div>
+                            <div class="desc-bottom">
+                                <div class="skill">角色技能</div><ul class="skills">
+                                    <li data-name="火力压制"  onclick="showVbox('q0900i2tru9')"><img src="./images/hero_img/a.png" class="skills-1"><span>过载</span></li>
+                                    <li data-name="能量屏障"  onclick="showVbox('n0874x8jkir')"><img src="./images/hero_img/b.png" class="skills-2"><span>电磁炮塔</span></li>
+                                    <li data-name="机械灵感"  onclick="showVbox('c0831u01vg7')"><img src="./images/hero_img/c.png" class="skills-3"><span>感电</span></li></ul></div>
+                        </div>
+        
+            </div>
+        
+            <div class="biao  loo5" style="display: none;">
+                    <div class="hero-list-person clear">
+                      
+                         <div class="hero-person hero6"></div> 
+                    </div>
+        
+                    
+        
+                    <div class="hero-desc  onAnimate animated fadeInRight " data-animation="fadeInRight">
+                        
+                            <div class="top-left">
+                            
+                                <p >冈格尼尔</p>
+                                <img src="./images/hero_img/h_five.png" width="84" height="117" alt="井川家族">
+                          
+                                            
+                            </div>
+        
+                                <div class="desc-top">
+                                        <div class="desc-name">
+                                            <strong>银</strong>
+                                            <em>Silver</em>
+                                            <div class="line spr ">
+                                            </div></div>
+                                            <p>银的过去很是神秘，因为就连她自己都不记得以前到底发生了什么。冈格尼尔先生发现她时，她已奄奄一息，还断掉了一只手臂，但意外的是，银的身体拥有自我修复的能量。就这样，冈格尼尔先生给她安装了一条机械臂，让她可以控制这种能力。现在的银是冈格尼尔集团的情报官，她想通过搜集的情报，渐渐找到自己失去的记忆。现在，她大概调查到了那个机构……						</p>
+        
+        <!-- ========================第二块-------------------------------- -->
+                        <div class="hero-sp">
+                             <div class="box-img">
+                                 <img class="hero-sp-img" onclick="showVbox('f0901cm1ju6')" src="./images/hero_img/h_fivep.png" width="172" height="87" alt="视频">
+                                 <em class="shade"></em>
+                             </div>
+                             <div class="hero-sp-des">
+                                 <span class="spr">定位</span>
+                                 <ul>
+                                     <li>游击</li>
+                                 </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-middles">
+                                <ul><li><p class="merit"><span class="you"> 优点：</span><span>范围治疗 保护队友</span></p></li></ul></div>
+                            <div class="desc-bottom">
+                                <div class="skill">角色技能</div><ul class="skills">
+                                    <li data-name="火力压制"  onclick="showVbox('q0900i2tru9')"><img src="./images/hero_img/v.png" class="skills-1"><span>亚空间</span></li>
+                                    <li data-name="能量屏障"  onclick="showVbox('n0874x8jkir')"><img src="./images/hero_img/n.png" class="skills-2"><span>能量立方</span></li>
+                                    <li data-name="机械灵感"  onclick="showVbox('c0831u01vg7')"><img src="./images/hero_img/c.png" class="skills-3"><span>能量汲取</span></li></ul></div>
+                        </div>
+        
+            </div>
+        
+
+                <!-- /下面的div是最大盒子的<div></div> -->
+                </div>
+
+
+        </div>
+
+<!-- 同人作品 -->
+        <div class="tren" id="newfour">
+            <div class="trn_content">
+                <div class="tren_main">
+                        <h3 class="title2 hd spr onAnimate animated fadeInLeft" >   
+                        </h3>
+                        <a href="javascript:;" class="works-more onAnimate animated fadeInRight"">查看更多 <i>&gt;&gt;</i></a>
+                        <div class="works onAnimate animated fadeInUp" data-animation="fadeInUp">
+                            </div>
+                </div>
+
+            </div>
+        </div>
+<!-- 游戏特色 -->
+        <div class="dlunbo " id="newfive">
+
+                <div class="s6-top">
+                        <h3 class="title3  onAnimate animated fadeInLeft" data-animation="fadeInLeft">
+                        
+                        </h3>
+                    </div>
+
+
+    <div class="lbcontent">
+        <div class="poster-main" id="carousel" data-setting='{
+            "width":1500,
+            "height":600,
+            "posterWidth":1000,
+            "posterHeight":600,
+            "scale":0.8,
+            "speed":1000,
+            "autoPlay":true,
+            "delay":1000,
+            "verticalAlign":"middle"
+            }'> 
+<div class="poster-btn poster-prev-btn"></div> 
+<ul class="poster-list"> 
+<li class="poster-item"><a href="javascript:;"><img src="images/2.jpg" alt="" width="100%" /></a></li> 
+<li class="poster-item"><a href="javascript:;"><img src="images/1.jpg" alt="" width="100%" /></a></li> 
+<li class="poster-item"><a href="javascript:;"><img src="images/3.jpg" alt="" width="100%" /></a></li> 
+<li class="poster-item"><a href="javascript:;"><img src="images/4.jpg" alt="" width="100%" /></a></li> 
+<li class="poster-item"><a href="javascript:;"><img src="images/5.jpg" alt="" width="100%" /></a></li> 
+</ul> 
+<div class="poster-btn poster-next-btn"></div> 
+</div> 
+
+</div>
+
+               
+
+
+        </div>
+
+ <!-- fotter -->
+ <div class="fotter">
+     <div class="f_top">
+         <div class="ft_content">
+             <ul>
+                 <li>
+                     <div class="tuborder  f_le"> </div>
+                     <p>点击进入</p>
+                     <p>官方微博</p>
+                 </li>
+                 <li>
+                        <div class="tuborder f_mi"> </div>
+                        <p>扫描二维码</p>
+                        <p>关注微信公众号</p>
+                </li>
+                    <li>
+                         <div class="tuborder f_ri"> </div>
+                         <p>点击进入</p>
+                         <p>兴趣部落</p>
+                </li>
+             </ul>
+
+         </div>
+
+     </div>
+
+     <div class="f-bottom">
+         <!-- <input type="button" class="btn" value="返回顶部"> -->
+            <div class="bottom_connect">
+            <div class="foot_lefts">
+                <div class="return">
+                   <span>TOP</span> 
+                </div>
+
+
+
+            </div>
+            <div class="foot_rights">
+                <ul>
+                    <li>腾讯互动娱乐|服务条款|腾讯游戏隐私保护指引|腾讯游戏招聘|腾讯游戏客服|游戏地图|商务合作|腾讯网|网站导航</li>
+                    <li>腾讯公司版权所有</li>
+                    <li>COPYRIGHT © 1998 - 2019 TENCENT. ALL RIGHTS RESERVED.</li>
+                    <li>本网络游戏适合16+岁的用户使用；为了您的健康，请合理控制游戏时间。</li>
+                    <li>粤网文[2017]6138-1456号</li>
+                    <li>（总）网出证（粤）字第057号</li>
+                    <li><img src="./images/icplogo.png" alt="" width="13" 15>文网游备字 [2018] M-CSG 0216 号 |国新出审[2019] 2037号|ISBN 978-7-498-06572-8|全国文化市场统一举报电话：12318</li>
+                </ul>
+                  
+
+            </div>
+     </div>
+ </div>
+        
+    </div>
+      
+        <script src="./js/hero.js"></script>
+        <script src="./js/animate.js"></script>
+        <script src="./js/wpzs.js"></script>
+
+        <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	    <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+	    <script src="js/Carousel.js"></script> 
+	   
+
+    
+<script>
+
+$('.foot_lefts .return').click(function () {
+$('html').animate({
+    scrollTop :0
+});
+
+})
+
+</script>
+
+
+</body>
+
+</html>

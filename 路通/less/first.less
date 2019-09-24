@@ -1,0 +1,235 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: url('../img/bg-age.jpg') center center no-repeat #0d0d0d;
+    background-size: cover;
+    position: fixed;
+    left: -10px;
+    top: -7px;
+    text-align: center;
+}
+
+.box {
+    width: 85%;
+    margin: 180px auto;
+
+    // 回到平台主页
+    .uplay {
+        position: fixed;
+        right: 50px;
+        top: 50px;
+        width: 100px;
+        height: 60px;
+        z-index: 99999;
+
+        a {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            background: rgba(51, 170, 227, 0.3);
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+        }
+
+    }
+
+    .title {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        color: #fff;
+        vertical-align: inherit;
+        letter-spacing: .1em;
+        font-family: '微软雅黑';
+        font-weight: 400;
+        font-size: 26px;
+    }
+
+    // 输入框区域
+    .con {
+        // width: 80%;
+        // margin-left: 80px;
+        margin: 0 auto;
+        margin-top: 20px;
+        // text-align: center;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0 70px;
+
+        input {
+            height: 158px;
+            background: rgba(0, 0, 0, .6);
+            border: 1px solid rgba(51, 170, 227, .7);
+            text-align: center;
+            color: #fff;
+            font-size: 70px;
+            font-family: Verdana;
+            transform: scale(.8, 1);
+        }
+
+        span {
+            display: block;
+            clear: both;
+            color: #717c7d;
+            font: 14px/28px function_promedium, Verdana, sans-serif;
+            margin-top: 3px;
+            text-align: left;
+            letter-spacing: .1em;
+        }
+
+        input::placeholder {
+            /* WebKit browsers */
+            color: #fff;
+        }
+
+        .inp {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+
+            .year {
+                float: left;
+                width: 29%;
+                margin-left: 100px;
+
+                input {
+                    width: 100%;
+                }
+
+                span {
+                    margin-left: 25px;
+                }
+            }
+
+            .month {
+                float: left;
+                margin: 0 auto;
+
+                width: 21%;
+
+                input {
+                    width: 100%;
+                }
+
+                span {
+                    margin-left: 16px;
+                }
+            }
+
+            .day {
+                float: left;
+                width: 21%;
+
+                input {
+                    width: 100%;
+                }
+
+                span {
+                    margin-left: 16px;
+                }
+            }
+        }
+
+
+        .alert {
+            width: 400px;
+            height: 50px;
+            margin: 0 auto;
+            // border:1px solid #33AAE3;
+            display: none;
+
+            span {
+                text-align: center;
+                color: #ff9c00;
+                height: 50px;
+            }
+        }
+
+    }
+
+    // 下拉框区域
+    .s_tit {
+        label {
+            color: #33AAE3;
+            font-size: 13px;
+        }
+    }
+
+    .select {
+        width: 235px;
+        margin: 10px auto;
+        position: relative;
+
+
+
+        #country {
+            background: url(../img/bg-media.png) repeat center center rgba(8, 8, 8, .98);
+            color: #a9a9a9;
+            outline: none;
+            border: 0.5px solid rgb(73, 70, 70);
+            font: 12px;
+            height: 30px;
+            letter-spacing: 1px;
+            width: 200px;
+            cursor: pointer;
+            padding-left: 80px;
+            -webkit-appearance: none;
+            float: left;
+        }
+
+        .s_btn {
+            display: block;
+            height: 30px;
+            float: left;
+            position: relative;
+            // right: 402px;
+            top: 0;
+            width: 35px;
+            background: rgba(213, 45, 23, .5);
+            cursor: pointer;
+        }
+
+        .s_btn::after {
+            position: absolute;
+            top: 45%;
+            right: 13px;
+            content: '';
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #0d0d0d;
+        }
+    }
+
+
+    // 按钮区域
+    .btn {
+        width: 69px;
+        height: 69px;
+        margin: 10px auto;
+        position: relative;
+        cursor: pointer;
+
+        span {
+            vertical-align: inherit;
+            color: #fff;
+            position: absolute;
+            left: 17px;
+            top: 24px;
+        }
+
+        .circle {
+            margin: 10px auto;
+            width: 69px;
+            height: 69px;
+            background: rgba(213, 45, 23, .5);
+            border-radius: 50%;
+            // transition: .5s;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+﻿
+/*1.清除内外边距     body、ul、ol、dt、p、h1-h6、input等*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* height: 500px; */
+  background: url(../imges/home_bg.jpg) no-repeat fixed center top;
+}
+/*2.li默认列表符号    a标签默认下划线        img标签默认边框   下边有几个像素空白缝隙的问题*/
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  /*清除ie6默认图片边框*/
+  border: 0;
+  /*清除图片底部默认缝隙*/
+  vertical-align: middle;
+}
+/*3.input,textarea,等默认的轮廓线*/
+input,
+textarea {
+  outline: 0;
+}
+
+input {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+/*4.设置版心，页面背景颜色，文字大小，文字颜色,超链接颜色, 鼠标悬停颜色,浮动，清除浮动等常用属性*/
+.w {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+body {
+  font: 16px arial, 'microsoft yahei';
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* .clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+} */
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.bai {
+  color: #fff;
+}
+/* 图形字体 */
+

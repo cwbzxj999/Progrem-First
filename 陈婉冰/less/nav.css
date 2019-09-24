@@ -1,0 +1,271 @@
+.nav_fixed {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+.nav {
+  width: 100%;
+  height: 70px;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+.nav .logo {
+  width: 135px;
+  height: 70px;
+  line-height: 70px;
+}
+.nav .logo img {
+  width: 100%;
+}
+.nav .nav_center {
+  margin: 0 170px;
+}
+.nav .nav_center li {
+  float: left;
+  height: 70px;
+  padding: 0 20px;
+}
+.nav .nav_center li a {
+  display: block;
+  height: 70px;
+  font-weight: 500;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+.nav .nav_center li a p {
+  color: #fff;
+}
+.nav .nav_center li a p:nth-child(1) {
+  font-size: 16px;
+}
+.nav .nav_center li a p:nth-child(2) {
+  font-size: 12px;
+}
+.nav .nav_right {
+  height: 70px;
+}
+.nav .nav_right a {
+  display: block;
+  height: 100%;
+  line-height: 70px;
+}
+.nav .nav_right a img {
+  width: 82px;
+}
+.active {
+  background: pink;
+}
+.fix_pic {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  z-index: 100;
+}
+.fix_pic .close_btn {
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  left: -22px;
+  top: 0;
+  background: url('../img/nav/img-close.png') no-repeat 0 0;
+}
+.fix_pic .img_btn {
+  width: 133px;
+  height: 345px;
+  display: block;
+}
+.nav_btn {
+  width: 100%;
+  height: 34px;
+  text-align: center;
+  color: #fff;
+  line-height: 32px;
+  font-size: 18px;
+  background: url(../img/nav/bg_nav_btn.jpg) no-repeat center center;
+  position: relative;
+  z-index: 10;
+}
+.nav_btn em {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  font-style: normal;
+}
+.nav_btn span {
+  width: 14px;
+  height: 7px;
+  margin-left: 76px;
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  background: url('../img/nav/icon.png') no-repeat center top;
+}
+.nav_btn .on {
+  background-position: center bottom;
+}
+.nav_btn_box {
+  width: 100%;
+  max-width: 1920px;
+  height: 215px;
+  margin: 0 auto;
+  background: #d7d7d7;
+  position: relative;
+  z-index: 50;
+  display: none;
+}
+.nav_btn_box .btn_box_con {
+  height: 178px;
+  padding-top: 22px;
+}
+.nav_btn_box .btn_box_con .progress {
+  height: 136px;
+  padding: 0 20px;
+}
+.nav_btn_box .btn_box_con .progress li {
+  width: 236px;
+  height: 80px;
+  margin-right: 12px;
+  padding-top: 56px;
+  float: left;
+  cursor: default;
+  position: relative;
+  box-sizing: content-box;
+  background: url('../img/nav/process.jpg') no-repeat;
+}
+.nav_btn_box .btn_box_con .progress li .step_btn {
+  width: 182px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  margin-top: 18px;
+  text-align: center;
+  background: #453318;
+  border-radius: 20px;
+}
+.nav_btn_box .btn_box_con .progress li .step_btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 16px;
+}
+.nav_btn_box .btn_box_con .progress li:last-child {
+  margin-right: 0;
+}
+.nav_btn_box .btn_box_con .progress .step_02,
+.nav_btn_box .btn_box_con .progress .step_03 {
+  background-position: 0 -136px;
+}
+.nav_btn_box .btn_box_con .progress .step_02 p,
+.nav_btn_box .btn_box_con .progress .step_03 p {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 22px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+.nav_btn_box .btn_box_con .progress .step_02 a,
+.nav_btn_box .btn_box_con .progress .step_03 a {
+  color: #ff8054;
+  text-decoration: underline;
+  background: url('../img/nav/icon_notes.png') no-repeat right center;
+  padding-right: 20px;
+}
+.nav_btn_box .btn_box_con .progress .step_03 {
+  background-position: 0 -272px;
+}
+.nav_btn_box .btn_box_con .progress .step_04 {
+  background-position: 0 -408px;
+}
+.nav_btn_box .btn_box_con .progress .step_04 p {
+  text-align: left;
+  color: #fff;
+  width: 200px;
+  line-height: 1.5;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.nav_btn_box .btn_box_con .progress .step_04 p a {
+  color: #ff8054;
+  text-decoration: underline;
+}
+.nav_btn_box .btn_box_con .progress .step_04 p:first-child {
+  margin-top: 5px;
+}
+.nav_btn_box .btn_box_con .progress .step_05 {
+  background-position: 0 -544px;
+}
+.nav_btn_box .btn_box_con .progress .step_05 p {
+  margin-bottom: 5px;
+  width: 100%;
+  padding-top: 22px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+.nav_btn_box .btn_box_con .process_top01 {
+  width: 216px;
+  height: 30px;
+  margin-left: 20px;
+  float: left;
+  position: relative;
+  background: url('../img/nav/process_bottom02.png') no-repeat center bottom;
+}
+.nav_btn_box .btn_box_con .process_top01 span {
+  color: #826c4c;
+  position: absolute;
+  top: 16px;
+  left: 66px;
+  font-size: 16px;
+}
+.nav_btn_box .btn_box_con .process_top02 {
+  width: 504px;
+  height: 30px;
+  margin-left: 146px;
+  float: left;
+  position: relative;
+  background: url('../img/nav/process_top.png') no-repeat center bottom;
+}
+.nav_btn_box .btn_box_con .process_top02 span {
+  color: #27354e;
+  font-size: 18px;
+  position: absolute;
+  top: 16px;
+  left: 190px;
+}
+.nav_btn_box .btn_box_con .process_top03 {
+  width: 216px;
+  height: 30px;
+  float: left;
+  margin-left: 138px;
+  position: relative;
+  background: url('../img/nav/process_bottom03.png') no-repeat center bottom;
+}
+.nav_btn_box .btn_box_con .process_top03 span {
+  color: #826c4c;
+  font-size: 16px;
+  position: absolute;
+  top: 16px;
+  left: 21px;
+}
+.nav_btn_box .btn_box_con .process_top03 a {
+  color: #ff8054;
+  text-decoration: underline;
+  padding-right: 20px;
+  position: absolute;
+  left: 58px;
+  top: 37px;
+  font-size: 16px;
+  background: url(../img/nav/icon_notes.png) no-repeat right center;
+}
+.hide {
+  display: block;
+}

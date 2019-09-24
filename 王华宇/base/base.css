@@ -1,0 +1,46 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd{
+    font-size: 14px;
+    color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.ww {
+    width:1213px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+img,input {
+    vertical-align: middle;
+    border-style: none;
+    outline-style: none; 
+    padding: 0;
+}
+
+.left {
+    float: left;
+}
+
+
+.right {
+    float: right;
+}
+
+.clearfix::after{
+    content: "" ;
+    display: block;
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}

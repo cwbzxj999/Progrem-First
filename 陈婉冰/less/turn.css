@@ -1,0 +1,132 @@
+.pic_turn {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  z-index: 3;
+  background: url(../img/turn/turn_bg_2.jpg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.pic_turn .solid {
+  width: 860px;
+  height: 330px;
+  margin-top: 250px;
+}
+.pic_turn .solid ul {
+  width: 100%;
+  height: 100%;
+}
+.pic_turn .solid li {
+  list-style: none;
+}
+.solid ul li {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  transform: translateZ(-180px);
+}
+.solid ul li div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.solid ul li div:nth-child(1) {
+  top: -330px;
+  background: url('../img/turn/02.png');
+  transform-origin: bottom;
+  transform: translateZ(165px) rotateX(90deg);
+}
+.solid ul li div:nth-child(2) {
+  top: 330px;
+  background: url('../img/turn/01.png');
+  transform-origin: top;
+  transform: translateZ(165px) rotateX(-90deg);
+}
+.solid ul li div:nth-child(3) {
+  background: url('../img/turn/03.jpg');
+  transform: translateZ(165px);
+}
+.solid ul li div:nth-child(4) {
+  background: url('../img/turn/04.jpg');
+  transform: translateZ(-165px) rotateX(180deg);
+}
+.solid ol {
+  position: absolute;
+  width: 860px;
+  height: 60px;
+  background: #000;
+}
+.solid ol li {
+  height: 100%;
+  float: left;
+  width: 25%;
+  background: black;
+  box-shadow: 0 0 3px #245E84;
+  color: white;
+  text-align: center;
+  /*12px大小/20px行高*/
+  font: 14px/60px 'Microsoft Yahei';
+  cursor: pointer;
+}
+.solid ol li.on {
+  background: #26354C;
+}
+.turn_logo {
+  width: 100%;
+  position: absolute;
+  left: 100px;
+  top: 80px;
+  z-index: 3;
+}
+.turn_logo img {
+  width: 400px;
+  animation: bounce 2s infinite linear;
+}
+.turn_list {
+  width: 420px;
+  height: 390px;
+  background: #245E84;
+  margin-top: 250px;
+  z-index: 6;
+}
+.turn_list .turn_ban {
+  width: 100%;
+  height: 125px;
+}
+.turn_list .turn_ban video {
+  width: 100%;
+}
+.turn_list .list_bot {
+  width: 100%;
+  height: 260px;
+  background: url('../img/turn/turn_list_bg.jpg') no-repeat;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.turn_list .list_bot a {
+  float: left;
+  width: 136px;
+  height: 80px;
+  line-height: 1.2;
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+.turn_list .list_bot a img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 12px auto 6px;
+}
+.runaround {
+  animation: runaround 0.8s linear;
+}
+@keyframes runaround {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

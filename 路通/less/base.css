@@ -1,0 +1,39 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input,
+img {
+  vertical-align: middle;
+  padding: 0;
+  /* outline-style: none; */
+  border: 0 none;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}

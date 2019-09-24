@@ -1,0 +1,67 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img,
+input {
+  vertical-align: middle;
+  border: none;
+  outline-style: none;
+  padding: 0;
+}
+/*去掉input等聚焦时的蓝色边框*/
+table {
+  border-collapse: collapse;
+}
+ul,
+ol {
+  list-style: none;
+}
+textarea {
+  resize: none;
+}
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}

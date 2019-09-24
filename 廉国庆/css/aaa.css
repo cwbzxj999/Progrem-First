@@ -1,0 +1,726 @@
+body,
+html {
+  background-color: #101010;
+  display: inline;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 63px;
+  width: 100%;
+  background-color: #101010;
+}
+.nav .logo {
+  height: 60px;
+}
+.nav .logo img {
+  height: 60px;
+  margin-top: -10px;
+}
+.nav ul {
+  width: 100%;
+  background-color: #101010;
+}
+.nav li a {
+  display: block;
+  width: 126px;
+  height: 63px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+}
+.nav ul a:hover {
+  color: #000;
+  background-color: brown;
+}
+.nav .logo_Zright img {
+  float: right;
+  width: 82px;
+  height: 23px;
+  margin: 20px;
+}
+.nav span {
+  color: #2f333c;
+  margin-top: 10px;
+}
+.main_container {
+  padding-top: 60px;
+  width: 100%;
+  height: 630px;
+  overflow: hidden;
+}
+.main_container ul {
+  position: relative;
+  height: 100%;
+  width: 500%;
+}
+.main_container li {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+.main_container li a {
+  height: 100%;
+}
+.main_container .features_slider img {
+  height: 100%;
+  width: 100%;
+}
+.main_container {
+  position: relative;
+}
+.main_container .container_btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.main_container .container_btn {
+  width: 90px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+.main_container .container_btn a {
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.3);
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main_container .left_btn {
+  left: 0;
+}
+.main_container .right_btn {
+  right: 0;
+}
+.sections {
+  width: 100%;
+}
+.featured_slider_description {
+  height: 125px;
+  position: absolute;
+  bottom: -44px;
+  width: 100%;
+  padding-left: 15px;
+}
+.featured_slider_description .features_slider_title {
+  height: 65px;
+}
+.featured_slider_description h2 {
+  height: 65px;
+  line-height: 65px;
+  font-size: 30px;
+  text-transform: none;
+  text-align: left;
+  color: #ffffff;
+}
+.featured_slider_description p {
+  color: #675d5d;
+  margin-bottom: 5px;
+}
+.featured_slider_description a {
+  color: goldenrod;
+}
+.featured_slider_details {
+  display: none;
+}
+.details_box {
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: rotate 1s forwards;
+}
+@keyframes rotate {
+  font {
+    bottom: -10px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+.main_container_bottom {
+  padding-top: 5px;
+  width: 114px;
+  height: 14px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main_container_bottom span {
+  float: left;
+  display: block;
+  height: 10px;
+  width: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 1px solid brown;
+}
+.active {
+  background-color: brown;
+}
+.sections_introduce ul {
+  display: flex;
+  padding-top: 50px;
+}
+.sections_introduce li {
+  position: relative;
+  flex: 1;
+}
+.sections_introduce li + li {
+  margin-left: 10px;
+}
+.sections_introduce img {
+  width: 100%;
+}
+.sections_introduce p {
+  margin-top: 10px;
+  color: #fff;
+}
+.sections_introduce a:hover {
+  color: goldenrod;
+}
+.sections_introduce .summary {
+  position: absolute;
+  top: 0;
+  height: 152px;
+  width: 273px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.sections_introduce .summary .vac {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  transform: translate(-50px -50px);
+}
+.ccc {
+  color: #ccc;
+}
+.sections_Journalism {
+  margin-top: 10px;
+}
+.sections_Journalism h1 {
+  font-size: 50px;
+  margin-left: 30px;
+  color: #fff;
+}
+.Journalism {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Journalism_content {
+  height: 400px;
+  margin: 3px;
+  position: relative;
+}
+.Journalism_content p {
+  color: #fff;
+}
+.Journalism_content a:hover {
+  color: goldenrod;
+}
+.Journalism_content p + p + p {
+  margin: 0 20px;
+}
+.Journalism_content .p_y {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #2f333c;
+  margin-bottom: 10px;
+}
+.Journalism_content .summary {
+  width: 545px;
+  height: 307px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.Journalism_content .summary .valign {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+.sections_Read {
+  height: 333px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.sections_Read .sections_Read_box {
+  width: 33%;
+  flex: 1;
+  margin: 0 10px;
+}
+.sections_Read .sections_Read_box img {
+  width: 100%;
+  position: relative;
+  transition: all 0.3s linear;
+}
+body {
+  /* 透视  600- 1000之间*/
+  perspective: 1000px;
+}
+.Read_box_top {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.Read_box_top .sections_Read_box_Z {
+  font-size: 25px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  border: 2px solid #FFF;
+  color: #FFF;
+  text-align: center;
+  line-height: 48px;
+  transition: all 0.3s ease;
+  width: 49px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.Read_box_top p {
+  font-size: 2.5rem;
+}
+.Read_bottom_tail {
+  position: relative;
+  top: 10px;
+  bottom: 5px;
+  height: 60px;
+  width: 100%;
+}
+.Read_bottom_tail .Read_bottom {
+  border: 2px solid #fff;
+  position: absolute;
+  z-index: 10;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  overflow: hidden;
+}
+.Read_bottom_tail .Read_bottom p {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  transform: all 1s linear;
+  color: #000;
+  padding: 5px;
+}
+.Read_bottom_tail .Read_bottom .bac {
+  width: 300px;
+  height: 60px;
+  background: #f7f7f7;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  margin-left: -150px;
+  transform: skewX(105deg);
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+.Season_ticket_background {
+  width: 100%;
+  height: 600px;
+  background-color: #101011;
+  position: relative;
+  margin-top: 20px;
+  border-bottom: 2px solid burlywood;
+  border-top: 2px solid brown;
+}
+.Season_ticket_style .ticket_horn_bottom {
+  position: absolute;
+  border-top: transparent 60px solid;
+  border-left: transparent 100px solid;
+  border-bottom: burlywood 60px solid;
+  border-right: burlywood 100px solid;
+  bottom: 0;
+  right: 0;
+}
+.Season_ticket_style .ticket_horn_top {
+  position: absolute;
+  border-top: brown 60px solid;
+  border-left: brown 200px solid;
+  border-bottom: transparent 60px solid;
+  border-right: transparent 200px solid;
+  top: 0;
+  left: 0;
+}
+.Season_ticket {
+  width: 950px;
+  height: 555px;
+  background-color: #fff;
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Season_ticket .Season_ticket_Symbol {
+  width: 340px;
+  position: absolute;
+  top: 100px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.Season_ticket .Season_ticket_Symbol h6 {
+  text-align: center;
+  color: brown;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.Season_ticket .Season_ticket_Symbol p {
+  text-align: center;
+  color: brown;
+  font-size: 1px;
+}
+.Season_ticket_a {
+  width: 65%;
+  height: 40px;
+  position: absolute;
+  z-index: 100;
+  top: 40%;
+  left: 50%;
+  margin-left: -32.5%;
+  transform: translateY(-50%);
+}
+.Season_ticket_a .Season_ticket_left a {
+  height: 100px;
+  width: 60px;
+  display: block;
+  background: url(../Car/St/a_background_left.png);
+}
+.Season_ticket_a .Season_ticket_left a:hover {
+  position: relative;
+  transition: all 0.3s linear;
+  transform: translateX(-10px);
+}
+.Season_ticket_a .Season_ticket_right a {
+  height: 100px;
+  width: 60px;
+  display: block;
+  background: url(../Car/St/a_background_right.png);
+}
+.Season_ticket_a .Season_ticket_right a:hover {
+  position: relative;
+  transition: all 0.3s linear;
+  transform: translateX(10px);
+}
+.Season_ticket_top {
+  height: 40%;
+  width: 30%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  padding-top: 20px;
+  transform: translateX(-50%) translateY(-50%);
+  overflow: hidden;
+}
+.Season_ticket_top .Season_ticket_top_img {
+  width: 2600%;
+  height: 70%;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+}
+.Season_ticket_top .St_t {
+  position: relative;
+  flex: 1;
+  padding: 9px 0px 9px 30px;
+  width: 285px;
+}
+.Season_ticket_top .Season_ticket_t_font {
+  height: 13px;
+  width: 246px;
+  background-color: #000;
+  position: absolute;
+  top: -30px;
+  right: 4px;
+  transform: skew(-30deg);
+}
+.Season_ticket_top .Season_ticket_t_font p {
+  font-size: 10px;
+  color: #ccc;
+  line-height: 13px;
+  text-align: center;
+  transform: skew(30deg);
+}
+.Season_ticket_top img {
+  height: 80%;
+  width: 80%;
+}
+.Season_ticket_font {
+  height: 18px;
+  width: 180px;
+  background-color: #101010;
+  transform: skew(-30deg);
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  margin-left: -90px;
+}
+.Season_ticket_font p {
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  color: gold;
+  transform: skew(30deg);
+}
+.Season_ticket_Middle {
+  height: 40px;
+  width: 30%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 159px;
+  left: 50%;
+  margin-left: -15%;
+  transform: skew(-30deg);
+}
+.Season_ticket_Middle .Middle_flex {
+  width: 100%;
+  height: 100%;
+}
+.Season_ticket_Middle .Middle_single {
+  width: 100%;
+  height: 100%;
+}
+.Season_ticket_Middle .Season_Middle {
+  width: 33.33%;
+  height: 100%;
+}
+.Season_ticket_Middle .Season_Middle img {
+  width: 100%;
+  transform: skew(30deg);
+  height: 100%;
+}
+.St_back {
+  background-color: gold;
+}
+.Season_ticket_b_font {
+  height: 18px;
+  width: 180px;
+  background-color: #ccc;
+  transform: skew(-30deg);
+  position: absolute;
+  z-index: 2;
+  bottom: 135px;
+  left: 50%;
+  margin-left: -90px;
+}
+.Season_ticket_b_font p {
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  color: #000;
+  transform: skew(30deg);
+}
+.Season_skew {
+  width: 80%;
+  height: 145px;
+  background-color: #000000;
+  position: absolute;
+  left: 50%;
+  margin-left: -40%;
+  bottom: -1px;
+  transform: skew(-30deg);
+}
+.Season_bottom {
+  width: 66%;
+  height: 129px;
+  background-color: #000000;
+  position: absolute;
+  left: 50%;
+  margin-left: -33%;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Season_bottom .St_b {
+  width: 10%;
+  transform: skew(-30deg);
+}
+.Season_bottom img {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  transform: skew(30deg);
+}
+.sections_Game {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.sections_Game .Game_box_top {
+  position: absolute;
+  top: 67px;
+  overflow: hidden;
+}
+.sections_Game .Game_box_top ul {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+.sections_Game .Game_box_top li {
+  width: 100%;
+  height: 100%;
+}
+.sections_Game .Game_box_top img {
+  width: 100%;
+  height: 100%;
+}
+.sections_Game .Game_box_right {
+  position: absolute;
+  z-index: 2;
+  height: 400px;
+  top: 40px;
+  left: 50px;
+}
+.sections_Game .Game_box_right ul {
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+.sections_Game .Game_box_right li {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  display: none;
+}
+.sections_Game .Game_box_right img {
+  width: 100%;
+  height: 100%;
+}
+.Game_box_dian {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  border-top: 2px solid #ccc;
+  bottom: 28px;
+  left: 50px;
+}
+.Game_box_dian .Game_center {
+  width: 80px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Game_box_dian span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.Game_box_dian span + span {
+  margin-left: 10px;
+}
+.Ending_top {
+  background-color: brown;
+}
+.More_h1 {
+  display: flex;
+}
+.More_h1 span {
+  flex: 5;
+  border-top: 1px solid #ccc;
+  margin-top: 75px;
+}
+.More_h1 h1 {
+  margin: 55px 0;
+  flex: 2;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+.sections_More {
+  display: flex;
+  margin: 0 auto;
+}
+.sections_More .sections_More_box {
+  flex: 1;
+  margin: 0 37px;
+  width: 476px;
+}
+.sections_More .sections_More_box .More_top {
+  background-color: gold;
+  transform: skew(-30deg);
+}
+.sections_More .More_bottom {
+  background-color: #8cc540;
+}
+.sections_More .More_bottom p {
+  margin-top: 10px;
+  color: #000;
+}
+.More_top p {
+  color: #000;
+  text-align: center;
+  margin: 10px 0;
+  transform: skew(30deg);
+}
+.More_xia {
+  padding: 20px 0;
+  position: relative;
+  height: 40px;
+}
+.More_xia .More_box_bottom {
+  width: 111px;
+  position: relative;
+  z-index: 2;
+  left: 50%;
+  margin-left: -44px;
+  transform: skew(-30deg);
+  background-color: transparent;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+.More_xia .More_box_bottom p {
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  transform: skew(30deg);
+  color: #fff;
+}
+.More_xia .bac {
+  width: 200px;
+  height: 40px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.Ending ul {
+  margin: 10px auto;
+  width: 757px;
+}
+.Ending li {
+  margin: 10px 0;
+}
+.Ending img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Ending p {
+  color: #ccc;
+  text-align: center;
+}
+.Ending a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}

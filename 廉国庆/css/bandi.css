@@ -1,0 +1,55 @@
+/* 样式初始化 */
+
+body,ul,ol,dl,li,dt,dd,p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    font-family: "微软雅黑";
+}
+ul{
+    list-style: none;
+}
+a{
+   text-decoration:none;
+    color: rgb(169, 168, 165);
+
+}
+
+img,input{
+    border: none;
+    outline-style: none;
+    padding: 0;
+    vertical-align: middle;
+}
+/* 版心 */
+.w{
+    width: 1123px;
+    margin: 0 auto;
+
+}
+/* 左浮动 */
+.left{
+    float: left;
+}
+/* 右浮动 */
+.right{
+    float: right;
+}
+   /* 第二种方式: 伪元素清除浮动 */
+   .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+    /* 补充代码 */
+    height: 0;
+    line-height: 0;
+    /* 将该标签隐藏 */
+    visibility: hidden;
+}
+
+.clearfix {
+     /* 兼容IE浏览器 */
+     *zoom: 1;
+}

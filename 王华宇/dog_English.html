@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 初始化 -->
+    <link rel="stylesheet" href="base/base.css">
+    <!-- 页面样式 -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- jQuery文件 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 动画封装文件 -->
+    <script src="js/animation.js"></script>
+
+
+
+    <script>
+        $(function () {
+
+            new Rotate("rotate");
+            var ul = document.querySelector('ul');
+        })
+    </script>
+</head>
+
+
+<body style="overflow-x:hidden">
+    <!-- <audio src="img/W&W,Hardwell,Lil Jon - Live the Night.mp3" loop  autoplay ></audio> -->
+    <!-- 顶部区域1 -->
+
+    <div class="top_box clearfix">
+        <!-- 第一行 -->
+        <div class="top_img">
+                <a href="../uplay/index.html">
+            <img src="img/01.png" alt="">
+            </a>
+        </div>
+        <!-- 第二行 -->
+        <div class="top_sm_box clearfix">
+            <img src="img/2.png" alt="" class="left">
+            <ul class="left lalala clearfix">
+                <li class="left">
+                    <a href="javascript:;" class="a_bg1">Home page</a>
+                    <a href="javascript:;" class="a_bg11">Home page</a>
+                </li>
+                <li class="left">
+                    <a href="javascript:;" class="a_bg2">Special effects </a>
+                    <a href="javascript:;" class="a_bg22">Special effects </a>
+                </li>
+                <li class="left">
+                    <a href="javascript:;" class="a_bg3">Play any role</a>
+                    <a href="javascript:;" class="a_bg33">Play any role</a>
+                </li>
+                <li class="left">
+                    <a href="javascript:;" class="a_bg4">Journalism</a>
+                    <a href="javascript:;" class="a_bg44">Journalism</a>
+                </li>
+            </ul>
+            <!-- 右侧红色盒子 -->
+            <a href="javascript:;" class="red_box right">
+                <span href="#" class="red_box_sm">
+                    <h3>To make </h3>
+                    <span>Release date: March 24, 2020</span>
+                    <h3 id="hh3">To make </h3>
+                    <span id="ssp3">Release date: March 24, 2020</span>
+                </span>
+            </a>
+        </div>
+    </div>
+    <!-- 视频区域 -->
+    <div class="video_box">
+        <video src="img/w.mp4" muted autoplay loop></video>
+        <img src="img/24.png" alt="" id="img1">
+        <img src="img/27.png" alt="" id="img2">
+        <img src="img/21.png" alt="" id="img3">
+        <img src="img/28.png" alt="" id="img4">
+        <!-- 视频上的文字区域 -->
+        <div class="vd_box">
+            <h1>Welcome to the rebellion</h1>
+            <span>Take back your future</span>
+            <span id="s1"></span>
+            <p>Take back your future in watchdog: legion,
+                London is facing its downfall in the near future...Unless you can turn it around.
+                Organize a rebellion against the opportunists in power, but sit down and have a cup of tea first.
+                After all, you're not a goddamn monster.。</p>
+            <!-- 小圆球子 -->
+            <div class="round">
+                <span id="s2"></span>
+                <span id="s3">
+                    <a href="javascript:;" id="a1" class="">Watch</a>
+                    <!-- <a href="javascript:;"  id="a2">Watch</a> -->
+                </span>
+                <span id="ss3" class=""></span>
+                <span id="s4"><a href="javascript:;" class=""><img src="img/xiangyoujiantou (1).png" alt=""></a></span>
+                <span class="ss4"></span>
+                <a href="javascript:;" style="display: block" id="s5">play</a>
+                <a href="javascript:;" style="display: block" id="s6" class="">play</a>
+            </div>
+        </div>
+    </div>
+    <!-- 内容区域1 -->
+    <div class="content1">
+        <img src="img/37.jpg" alt="" id="img_1">
+        <img src="img/39.png" alt="" id="img_2">
+        <img src="img/29.png" alt="" id="img1_3">
+        <img src="img/39.png" alt="" id="img_6">
+        <!-- 内容图片 -->
+        <div class="content_img">
+            <!-- 左图片盒子 -->
+            <div class="l_img">
+                <!-- 左图片上的文字 -->
+                <div class="l_text">
+                    <h3>Recruit and play role</h3>
+                    <span>Create your own </span>
+
+                    <p id="ppp">Still wondering where to find your own army?
+                        How about recruiting everywhere?Every Londoner has a reason to fight back.
+                        Z plays any role -- including taxi driver,
+                        Ex-spy, frustrated boxer, smooth lawyer
+                        , snarling, grumpy grannies, anyone.</p>
+                </div>
+                <!-- 左大图片 -->
+                <div class="round_box">
+                    <img src="img/3.jpg" alt="" id="img_4">
+                    <!-- <div class="round_big"> -->
+
+                    <span class="round1 "></span>
+                    <span class="round11"></span>
+
+                    <!-- </div> -->
+                    <!-- 小圆球 -->
+                    <a id="p3" href="javascript:;" style="cursor: pointer"> <span id="pp4">Count me in</span><span
+                            id="ppp4">Count me in</span></a>
+                    <a id="pp3" href="javascript:;" class="" style="cursor: pointer"></a>
+
+                </div>
+
+            </div>
+            <!-- 中上盒子 -->
+            <div class="mi_img">
+                <!-- 中上图片 -->
+                <img src="img/4.jpg" alt="" id="i1">
+                <!-- <div id="p5"> -->
+                <div class="yinsi "></div>
+                <div class="yinsi2"></div>
+                <!-- </div> -->
+                <div class="yincang">
+                    <!-- 中上盒子中的文字 -->
+                    <div class="m_text">
+                        <h3>Back in London</h3>
+                        <span id="spa_sp">Back future</span>
+                        <p id="m_pp">London fell into a nightmare of tyranny
+                            But there is still a chance to sound the alarm.Rally the rebels
+                            Use the city's technology and firepower against those behind it.
+                        </p>
+                        <!-- 小圆球 -->
+                        <a href="javascript:;" id="pp11"></a>
+                        <a id="pp1" href="javascript:;" style="cursor: pointer">
+                            <span class="span_s">learn more</span>
+                            <span class="span_ss">learn more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 中下图片 -->
+            <div class="bot_img">
+                <img src="img/38.jpg" alt="">
+
+                <!-- 中下文字 -->
+                <div class="cang1 "></div>
+                <div class="cang2 "></div>
+                <div class="yincang1">
+                    <div class="b_text">
+                        <h3>Team up with friends</h3>
+                        <span>Join hands</span>
+                        <p id="big_p">Explore detailed online content in collaboration mode with your real friends,
+                            Quests and exciting side activities like: mugless boxing,
+                            Fancy football, smuggling and street art.
+                        </p>
+                        <!-- 小圆球 -->
+                        <a href="javascript:;" id="pp22"></a>
+                        <a id="pp2" href="javascript:;" style="cursor: pointer">
+                            <span class="span_p">learn more</span>
+                            <span class="span_pp">learn more</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 地球转动区域 -->
+    <div class="earth_box">
+        <img src="img/37.jpg" id="ii1">
+        <img src="img/29.png" id="ii2">
+        <img src="img/32.png" id="ii3">
+        <!-- 转动图片 -->
+        <div class="earth1">
+
+            <div class="e1 ee1">
+                <img src="img/zhuan.png" alt="" id="ii4">
+            </div>
+
+            <div class="e2 ee2">
+                <img src="img/neiyuan.png" alt="" id="ii5">
+            </div>
+            <!-- 地球上的文字 -->
+            <div class="e_text">
+                <h6>Potentate</h6>
+                <span>These are the forces that will shape London in the near future......</span>
+                <p id="p_p1">When London fell, opportunists knew exactly how to seize power.
+                    They are managers now, and you should make sure they don't stay in the top job for long.
+                    Organized crime</p>
+            </div>
+            <!-- 地球上的四个图图片 -->
+            <div class="e_img clearfix">
+                <div class="e_img_one left">
+                    <img src="img/004.jpg" alt="">
+                    <div class="e_text_one">
+                        <h6>Organized</h6>
+                        <span>Squeeze the weak</span>
+                        <p style="width: 100%">When society falls apart, criminals sense opportunity.
+                            We're not talking about ordinary guns,
+                            Drugs, prostitution,
+                            Someone should do something about these things...</p>
+                    </div>
+                </div>
+                <div class="e_img_two left">
+                    <img src="img/003.jpg" alt="">
+                    <div class="e_text_two">
+                        <h6>Elder brother </h6>
+                        <span>Always staring at you</span>
+                        <p style="width: 100%">Technology does wonders for society, doesn't it?
+                            Automation replacing workers and cryptocurrencies destabilising markets
+                            And 24/7 surveillance. Isn't that great
+                            ?
+                            Class and machine boundaries.It's a perfect fit..."Living
+                            "The good times.</p>
+                    </div>
+                </div>
+                <div class="e_img_three left">
+                    <img src="img/002.jpg" alt="">
+                    <div class="e_text_three">
+                        <h6>Crime</h6>
+                        <span>for your benefit </span>
+                        <p style="width: 100%">That's easy. There's a private military company promising to protect it
+                            Our safety.Most of us are willing to give up
+                            Personal freedom in exchange for a false sense of security.perfect
+                            Trade!
+                            Surely there is no ulterior motive...</p>
+                    </div>
+                </div>
+                <div class="e_img_four left">
+                    <div class="e_text_four">
+                        <h6>DEDSEC</h6>
+                        <span>Defiance </span>
+                        <p style="width: 100%">In this chaotic situation, society needs a stir
+                            The power of anyway.The good news is that there are forces working hard
+                            To return London to the people.You may listen to
+                            Said they, maybe you don't,
+                            When they call, you pick up the phone.</p>
+                    </div>
+                    <img src="img/001.jpg" alt="">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 轮播图区域 -->
+    <div class="img_box_one">
+        <img src="img/39.png" alt="" id="img222">
+        <img src="img/35.png" alt="" id="img333">
+        <img src="img/ddd.jpg" alt="" width="100%" height="100%" id="img111">
+        <!-- <span class="sp_one sp_one1">To </span>
+        <span class="sp_two sp_one2">make </span>
+        <span class="sp_three sp_one3">an</span>
+        <span class="sp_four sp_one4">about</span> -->
+        <div id="rotate" style="width: 800px">
+
+            <pre class="prev"></pre>
+
+            <pre class="next"></pre>
+
+            <ul style="width: 700px">
+
+                <li><img src="img/111.jpg" id="ro_img1" /></li>
+
+                <li><img src="img/222.jpg" id="ro_img2" /></li>
+
+                <li><img src="img/333.jpg" id="ro_img3" /></li>
+
+                <li><img src="img/444.jpg" id="ro_img4" /></li>
+
+                <li><img src="img/555.jpg" id="ro_img5" /></li>
+
+                <li><img src="img/666.jpg" id="ro_img6" /></li>
+
+                <li><img src="img/777.jpg" id="ro_img7" /></li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+    <!-- 点击图片显示 购物车 -->
+    <div class="shop_big">
+        <div class="shop_box">
+            <div class="shop_one">
+                <img src="img/11.jpg" alt="" style="width: 100px" width="100px" id="img_1111">
+                <span id="sp1">Clara Lear</span>
+                <!-- <span id="sp2">ded成员，为了贩卖更有利的情报，
+                窃取dedsec部分资料，刻意接近皮尔斯。
+                后悔后因不愿与黑帮合作被杀；</span> -->
+                <span id="sp4">type:&nbsp;&nbsp;Defender</span>
+                <span id="sp2">$2999</span>
+                <span id="sp3">delete</span>
+            </div>
+
+            <div class="shop_two">
+                <img src="img/22.jpg" alt="" style="width: 100px" width="100px" id="img_1111">
+                <span id="sp1">Damien Ann</span>
+                <!-- <span id="sp2">ded成员，为了贩卖更有利的情报，
+                窃取dedsec部分资料，刻意接近皮尔斯。
+                后悔后因不愿与黑帮合作被杀；</span> -->
+                <span id="sp4">type:&nbsp;&nbsp;Defender</span>
+                <span id="sp2">$1999</span>
+                <span id="sp3">delete</span>
+            </div>
+
+            <div class="shop_three">
+                <img src="img/33.jpg" alt="" style="width: 100px" width="100px" id="img_1111">
+                <span id="sp1">Lucky quinn</span>
+                <!-- <span id="sp2">ded成员，为了贩卖更有利的情报，
+                窃取dedsec部分资料，刻意接近皮尔斯。
+                后悔后因不愿与黑帮合作被杀；</span> -->
+                <span id="sp4">type:&nbsp;&nbsp;Defender</span>
+                <span id="sp2">$2699</span>
+                <span id="sp3">delete</span>
+            </div>
+
+            <div class="shop_four">
+                <img src="img/44.jpg" alt="" style="width: 100px" width="100px" id="img_1111">
+                <span id="sp1">The first </span>
+                <!-- <span id="sp2">ded成员，为了贩卖更有利的情报，
+                窃取dedsec部分资料，刻意接近皮尔斯。
+                后悔后因不愿与黑帮合作被杀；</span> -->
+                <span id="sp4">type:&nbsp;&nbsp;Defender</span>
+                <span id="sp2">$2169</span>
+                <span id="sp3">delete</span>
+            </div>
+
+            <div class="shop_five">
+                <img src="img/55.jpg" alt="" style="width: 100px" width="100px" id="img_1111">
+                <span id="sp1">holloway</span>
+                <!-- <span id="sp2">ded成员，为了贩卖更有利的情报，
+                窃取dedsec部分资料，刻意接近皮尔斯。
+                后悔后因不愿与黑帮合作被杀；</span> -->
+                <span id="sp4">type:&nbsp;&nbsp;Defender</span>
+                <span id="sp2">$2169</span>
+                <span id="sp3">delete</span>
+            </div>
+
+            <div class="shop_six">
+                <img src="img/66.jpg" alt="" style="width: 100px" width="100px" id="img_1111">
+                <span id="sp1">Mat tara</span>
+                <!-- <span id="sp2">ded成员，为了贩卖更有利的情报，
+                窃取dedsec部分资料，刻意接近皮尔斯。
+                后悔后因不愿与黑帮合作被杀；</span> -->
+                <span id="sp4">type:&nbsp;&nbsp;Defender</span>
+                <span id="sp2">$1888</span>
+                <span id="sp3">delete</span>
+            </div>
+
+            <div class="shop_seven">
+                <img src="img/77.jpg" alt="" style="width: 100px" width="100px" id="img_1111">
+                <span id="sp1">Marcos wei</span>
+                <!-- <span id="sp2">ded成员，为了贩卖更有利的情报，
+                窃取dedsec部分资料，刻意接近皮尔斯。
+                后悔后因不愿与黑帮合作被杀；</span> -->
+                <span id="sp4">type:&nbsp;&nbsp;Defender</span>
+                <span id="sp2">$3669</span>
+                <span id="sp3">delete</span>
+            </div>
+        </div>
+    </div>
+    <!-- 底部视频区域 -->
+    <div class="footer_vid">
+        <img src="img/37.jpg" alt="" id="img_a">
+        <img src="img/le_fade_bg_ncsa.png" alt="" id="img_b">
+        <img src="img/34.png" alt="" id="img_c">
+        <img src="img/39.png" alt="" id="img_d">
+        <div class="w">
+            <!-- 上左视频 -->
+            <div class="video_big_box1">
+                <span class="shu1"></span>
+                <div class="imgaa">
+                    <img src="img/q_icon5.png" alt="" id="imgaa">
+                </div>
+                <video src="img/v2.mp4" muted autoplay loop id="voo"></video>
+                <div class="l_vid_tx">
+                    <h4 class="">Recruit all characters in the game world</h4>
+                    <span>Everyone is unique. </span>
+                    <p>Every Londoner has a reason to fight back.Everyone you meet -- from taxi drivers,
+                        The ex-spy, the frustrated boxer, the smooth-talking lawyer, the angry old cow -- all have their
+                        own stories,
+                        Character and skills.Choose carefully. Their lives are in your hands.</p>
+                </div>
+            </div>
+            <!-- 中间视频 -->
+            <div class="video_big_box2">
+                <span class="shu2"></span>
+                <div class="imgbb">
+                    <img src="img/q_icon5.png" alt="" id="imgbb">
+                </div>
+                <video src="img/v3.mp4" muted autoplay loop id="vdd"></video>
+                <div class="m_vid_tx">
+                    <h4>Your team, your style</h4>
+                    <span>Create unique teams. </span>
+                    <p>Do you want to build a classic British spy corps?
+                        Or are the football thugs more your cup of tea?Whatever you choose,
+                        It's up to you -- who to put in the resistance, what to do, which battles to choose,
+                        Make key decisions, hack, infiltrate and blow up your way to London's liberation.</p>
+                </div>
+            </div>
+
+            <!-- 下面视频 -->
+            <div class="video_big_box3">
+                <span class="shu3"></span>
+                <div class="imgcc">
+                    <img src="img/q_icon5.png" alt="" id="imgcc">
+                </div>
+
+                <video src="img/v1.mp4" muted autoplay loop id="vbb"></video>
+                <div class="b_vid_tx">
+                    <h4>your team, your style </h4>
+                    <span>Create unique teams. </span>
+                    <p>Do you want to build a classic British spy corps?
+                        Or are the football thugs more your cup of tea?Whatever you choose,
+                        It's up to you -- who to put in the resistance, what to do, which battles to choose,
+                        Make key decisions, hack, infiltrate and blow up your way to London's liberation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 固定的视频盒子 -->
+    <div class="y"></div>
+    <div class="fix_video1">
+        <img src="img/data.png" alt="" id="img_data1">
+        <video src="img/v11.mp4" id="video_a" controls preload loop></video>
+    </div>
+    <div class="fix_video2">
+        <img src="img/data.png" alt="" id="img_data2">
+        <video src="img/v22.mp4" id="video_b" controls preload loop></video>
+    </div>
+    <div class="fix_video3">
+        <img src="img/data.png" alt="" id="img_data3">
+        <video src="img/v33.mp4" id="video_c" controls preload loop></video>
+    </div>
+    <!-- 底部特效区域 -->
+    <div class="footer_box">
+        <div id="footer_bx"></div>
+        <img src="img/37.jpg" alt="" id="foot_img1">
+        <img src="img/11.png" alt="" id="foot_img2">
+        <img src="img/10.png" alt="" id="foot_img3">
+        <img src="img/www.png" alt="" id="foot_img4">
+        <img src="img/www.png" alt="" id="foot_img44">
+        <img src="img/88.png" alt="" id="foot_img5">
+        <img src="img/24.png" alt="" id="foot_img6">
+        <img src="img/88.png" alt="" style="position: absolute; 
+                left: 41%;
+                top: 100px;
+                
+                cursor: pointer;" id="foot_img55 " class="foot_img_555">
+    </div>
+    <!-- 底部收尾区域 -->
+    <div class="foot_box">
+        <div class="foot_top">
+            <img src="img/flag6.png" alt="">
+            <div class="none_yuyan">
+                <a href="dog.html" id="a_tiao">
+                    <img src="img/niubi.png" alt="">
+                    nh - Chinese
+                    <a href="javascript:;">
+                        <img src="img/flag1.png" alt="">
+                        Canadaas-sad
+                        <a href="javascript:;">
+                            <img src="img/flag2.png" alt="">
+                            Norway -Eng
+                            <a href="javascript:;">
+                                <img src="img/flag3.png" alt="">
+                                Russia - saf
+                                <a href="javascript:;">
+                                    <img src="img/flag4.png" alt="">
+                                    Poland -sadkc
+                                    <a href="javascript:;">
+                                        <img src="img/flag5.png" alt="">
+                                        Netherlands
+                                        <a href="javascript:;">
+                                            <img src="img/flag7.png" alt="">
+                                            Italy - sahgfx
+                                            <a href="javascript:;">
+                                                <img src="img/flag8.png" alt="">
+                                                Spain - sadve
+                                                <a href="javascript:;">
+                                                    <img src="img/flag9.png" alt="">
+                                                    Germany - po
+                                                    <a href="javascript:;">
+                                                        <img src="img/flag10.png" alt="">
+                                                        France - data
+                                                        <a href="javascript:;">
+                                                            <img src="img/flag11.png" alt="">
+                                                            Norway - sad
+                                                            <a href="javascript:;">
+                                                                <img src="img/flag12.png" alt="">
+                                                                U.S. - English
+                                                                <a href="javascript:;">
+                                                                    <img src="img/flag13.png" alt="">
+                                                                    North America
+
+                                                                </a>
+            </div>
+            <a href="javascript:;" id="big_a">
+                English
+            </a>
+        </div>
+        <div class="foot_mid">
+            <h3>Ubisoft game zone</h3>
+            <a href="javascript:;">Far cry: new dawn zone</a>
+            <a href="javascript:;">Assassin's creed: Odyssey</a>
+            <a href="javascript:;">Rainbow six: siege zone</a>
+            <a href="javascript:;">Assassin's creed: origins zone</a>
+            <a href="javascript:;">Assassin's creed zone </a>
+            <a href="javascript:;">Far cry 5</a>
+            <a href="javascript:;">Cool car 2 zone</a>
+            <a href="javascript:;">The blockade zone</a>
+            <a href="javascript:;">"Full open 2017" zone</a>
+            <a href="javascript:;">Watch dogs 2 zone</a>
+            <a href="javascript:;">Far cry: savage source zone</a>
+            <a href="javascript:;">Ghost ops: wilderness</a>
+            <p>©2006-2019 Ubisoft Entertainment. All Rights Reserved.
+                Ubisoft, ubi.com, and the Ubisoft logo are trademarks
+                of Ubisoft Entertainment in the U.S. and/or other
+                countries.</p>
+            <p>沪ICP备 10013909号</p>
+        </div>
+    </div>
+
+
+
+    <!-- // 实现页面特效 -->
+    <script src="js/SpecialEffects.js"></script>
+    <!-- 小星星 -->
+    <script src="js/common.js"></script>
+    <!-- 小星星 -->
+    <script>
+        function getMathx() {
+            return Math.floor(Math.random() * (1200 - 1 + 1) + 1);
+        }
+
+        function getMathy() {
+            return parseInt(Math.random() * 1000 + 1);
+        }
+
+        id('footer_bx').onmouseover = function () {
+            setInterval(function () {
+
+                id('footer_bx').innerHTML = '<span id="xing_span">★</span>';
+
+                id('footer_bx').firstElementChild.style.left = getMathx() + 'px';
+                id('footer_bx').firstElementChild.style.top = getMathy() + 'px';
+            }, 100);
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

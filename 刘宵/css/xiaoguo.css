@@ -1,0 +1,599 @@
+@charset "utf-8";
+
+
+
+
+.r6_gameinfo_overview .gameinfo_overview_subnav                 { position:fixed; z-index:2; top:190px; left:auto; right:0; }
+.r6_gameinfo_overview .gameinfo_overview_subnav ul              { list-style-type:none;  }
+.r6_gameinfo_overview .gameinfo_overview_subnav ul li           { margin:1px 0 0 0; text-align:right; text-transform:uppercase; }
+.r6_gameinfo_overview .gameinfo_overview_subnav ul li           {
+	background:-moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background:-webkit-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background:linear-gradient(to right,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#000',GradientType=1 ); /* IE6-9 */
+}
+.r6_gameinfo_overview .gameinfo_overview_subnav ul li a         { display:block; padding:5px 15px 5px 25px; font-family:"R6S-Regular",sans-serif; font-size:30px; color:#fff; }
+.r6_gameinfo_overview .gameinfo_overview_subnav ul li:hover a   { color:#36a9e0; }
+.r6_gameinfo_overview .gameinfo_overview_subnav ul li.current a { color:#36a9e0; border-right:4px solid #36a9e0; }
+
+.row_gameinfo_overview h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.row_gameinfo_overview h2		{ margin:0 0 3.125% 0; font-size:8rem; text-align:center; }
+.row_gameinfo_overview p		{ margin:3.125% 0; /*font-family:'R6S-Light'; font-size:3rem; line-height:1;*/ }
+
+.c_gameinfo_overview			{ margin:0 auto; width:90%; text-align:center; }
+
+
+.row_gameinfo_overview_intro	{ padding:3.75% 0; background:#0d0d0d url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-overview-intro.jpg') 50% 50% no-repeat; background-size:cover; text-align:center; overflow:hidden; }
+
+
+
+.interactive-trailer			{ position:relative; display:inline-block; margin:15px 60px; width:calc(45% - 60px); overflow:hidden; }
+.interactive-trailer a			{ position:relative; display:block; border:1px solid #333740; -webkit-transition:border-color .5s ease; transition:border-color .5s ease; }
+.interactive-trailer a:after	{ position:absolute; left:0; top:0; content:""; display:block; margin:0 auto; width:100%; height:100%; background:url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-play.png') 50% 50% no-repeat; background-size:20%; }
+.interactive-trailer img		{ display:block; width:100%; max-width:100%; height:auto; }
+.interactive-trailer p		{     font-family: "R6S-Regular"; font-size: 3rem; line-height: 1;    text-transform: uppercase; }
+
+.interactive-trailer a:hover:after		{ background:url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-play-hover.png') 50% 50% no-repeat; background-size:20%; }
+
+
+
+@media (max-width: 991px) {
+	.r6_gameinfo_overview .gameinfo_overview_subnav {
+		display: none;
+	}
+}
+
+@media (max-width: 767px)
+{
+	.row_gameinfo_overview h1		{ font-size:7rem !important; }
+	.row_gameinfo_overview h2		{ margin:0 0 30px 0; font-size:5rem !important;  }
+}
+
+.row_gameinfo_overview_maps			{ padding:3.75% 0; background:#0d0d0d url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-v3-white-bg.jpg'); overflow:hidden; }
+.row_gameinfo_overview_maps	h2		{ color:#000; text-shadow:1px 1px 1px rgba(255, 255, 255, 0.75); }
+.row_gameinfo_overview_maps			{ color:#000; text-shadow:1px 1px 1px rgba(255, 255, 255, 0.75); }
+
+.gameinfo_maps_list ul				{ margin:0 -10px; overflow:hidden; font-size:0; }
+.gameinfo_maps_list li				{ position:relative; display:inline-block; margin:15px; width:calc(33.33333% - 30px); /*padding:calc(18.75% - 20px) 0 0 0;*/ overflow:hidden; }
+.gameinfo_maps_list li a			{ display:block; color:#000; /*position:absolute; left:0; top:0; width:100%; height:100%; overflow:hidden; transition:all 0.15s linear 0s;*/ }
+.gameinfo_maps_list li a img		{ display:block; width:100%; max-width:100%; height:auto; }
+.gameinfo_maps_list li a span		{ position:relative; padding:0 0 0 40px; font-family:'R6S-Light'; font-size:4rem; line-height:1; text-transform:uppercase; }
+.gameinfo_maps_list li a:after		{ position:absolute; left:0; top:0; content:""; display:block; margin:0 auto; width:100%; height:100%; background:url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-play.png') 50% 65% no-repeat; background-size:25%; }
+.gameinfo_maps_list li a:hover:after	{ background:url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-play-hover.png') 50% 65% no-repeat; background-size:25%; }
+.gameinfo_maps_list li a span:before	{ position:absolute; left:0; top:0; content:""; display:block; margin:0 auto; width:100%; height:100%; background:url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-play.png') 0 60% no-repeat; background-size:auto 70%; }
+/** hide play icon on title **/
+.gameinfo_maps_list li a 				{ text-align:center; }
+.gameinfo_maps_list li a span			{ padding:0; }
+.gameinfo_maps_list li a span:before	{ display:none !important; }
+
+.gameinfo_maps_list_more				{ margin:30px 0 !important; }
+
+@media (max-width:991px)
+{
+	.gameinfo_maps_list li				{ width:calc(50% - 30px); }
+	.gameinfo_maps_list li a span		{ font-size:3rem; }
+}
+
+@media (max-width: 767px)
+{
+	.gameinfo_maps_list li				{ width:calc(50% - 30px); }
+}
+
+
+/***********************************************************************
+    GAME INFO - OPERATORS
+***********************************************************************/
+.row_gameinfo_overview_operators	{ position:relative; padding:3.75% 0; background:#0f1217 url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-overview-operators.jpg') 50% 50% no-repeat; background-size:cover; overflow:hidden; }
+.row_gameinfo_overview_operators:after			{ content:""; display:block; position:absolute; left:0; bottom:0; width:100%; height:1px; background:url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-row-shape.png') 50% 0 no-repeat; }
+
+.row_gameinfo_overview_operators .c_gameinfo_overview {     width: 75%; }
+
+.row_gameinfo_overview_operators .c_gameinfo_overview a#survey-start:before			{ content:''; display:block; position:absolute; top:0; left:0; margin:15px; width:50px; height:50px; }
+.row_gameinfo_overview_operators .c_gameinfo_overview a#survey-start:before 			{ background:transparent url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2030%2030%22%3E%0D%0A%09%3Cpolygon%20fill%3D%22%23FFFFFF%22%20points%3D%2214%2C1%2012%2C4%2012%2C7%2013%2C8%2013%2C9%2011%2C10%205%2C19%205%2C21%2010%2C25%208%2C29%20%0D%0A%0921%2C29%2022%2C24%2025%2C22%2025%2C19%2022%2C11%2019%2C9%2018%2C6.88%2018%2C3%2016%2C1%20%22%2F%3E%0D%0A%3C%2Fsvg%3E") no-repeat center center; background-size:100% 100%; }
+.row_gameinfo_overview_operators .c_gameinfo_overview a#survey-start:hover:before		{ outline:none; background: transparent url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 30' style='enable-background:new 0 0 30 30;' xml:space='preserve'%3E%3Cpolygon points='14,1 12,4 12,7 13,8 13,9 11,10 5,19 5,21 10,25 8,29 21,29 22,24 25,22 25,19 22,11 19,9 18,6.9 18,3 16,1 '/%3E%3C/svg%3E")  no-repeat center center; }
+.row_gameinfo_overview_operators .c_gameinfo_overview a#survey-start {
+	display: inline-block;
+	margin: 10px 10px 30px 10px;
+	padding: 15px 15px 15px 70px;
+	min-width: 100px;
+	font-family: 'R6S-Light';
+	font-size: 4rem;
+	line-height: initial;
+	color: #fff !important;
+	border: 1px solid #36a9e0;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	transition: background-color .15s ease-in,border-color .15s ease-in;
+	cursor:pointer;
+	position: relative;
+}
+
+.row_gameinfo_overview_operators .c_gameinfo_overview a#survey-start:hover { color:#000 !important; background-color:#36a9e0; }
+
+
+@media (max-width: 767px) {
+	.row_gameinfo_overview_operators .c_gameinfo_overview {
+		width: 90%;
+	}
+
+	.row_gameinfo_overview_operators .c_gameinfo_overview a#survey-start {
+		font-size: 3.5rem;
+	}
+}
+
+.gameinfo_tips_list						{ margin:0 -15px; overflow:hidden; font-size:0; }
+.gameinfo_tips_list	.yt-video			{ position:relative; display:inline-block; margin:15px; width:calc(50% - 30px); overflow:hidden; }
+.gameinfo_tips_list	.yt-video p			{ font-size:1.6rem; }
+.gameinfo_tips_list	.yt-video a			{ position:relative; display:block; border:1px solid #333740; -webkit-transition:border-color .5s ease; transition:border-color .5s ease; }
+.gameinfo_tips_list	.yt-video a:after	{ position:absolute; left:0; top:0; content:""; display:block; margin:0 auto; width:100%; height:100%; background:url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-play.png') 50% 50% no-repeat; background-size:20%; }
+.gameinfo_tips_list	.yt-video img		{ display:block; width:100%; max-width:100%; height:auto; }
+
+.gameinfo_tips_list	.yt-video a:hover		{ border:1px solid #36a9e0; }
+.gameinfo_tips_list	.yt-video a:hover:after		{ background:url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-play-hover.png') 50% 50% no-repeat; background-size:20%; }
+
+
+
+
+.survey-question,
+#survey-error,
+.gameinfo_survey_questions,
+.gameinfo_survey_result		{ display:none; }
+#operator-result-template	{ display:none !important; }
+
+.row_gameinfo_overview_survey		{ position:relative; padding:3.75% 0; padding:50px 0; background:#0f1217 url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-overview-survey.jpg') 50% 50% no-repeat; background-size:cover; overflow:hidden; }
+.row_gameinfo_overview_survey:after	{ content:""; display:block; position:absolute; left:0; bottom:0; width:100%; height:1px; background:url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-row-shape.png') 50% 0 no-repeat; }
+
+.row_gameinfo_overview_survey		{ display: none; }
+
+.gameinfo_survey_title	{ margin-bottom:3.125%; }
+
+.gameinfo_survey_questions, .gameinfo_survey_result { min-height:320px; }
+
+.module-survey						{ margin:0 auto; width:50%; max-width:640px; text-align:left; }
+.module-survey .group-label			{ display:block; margin:0 0 20px 0; font-family:'R6S-Light'; font-size:4rem; line-height:1; text-transform:uppercase; }
+.module-survey .num 				{ display: inline-block; width:40px; margin-left:-54px; }
+.module-survey label				{ position:relative; display:block; margin:10px 10px 10px 26px; font-size:1.6rem; cursor:pointer; }
+
+.module-survey .in-action			{ text-align:center; }
+.module-survey .error				{ margin:0 !important; margin-left:15px !important; color:#ff3500; }
+
+.module-survey input[type="radio"]	{ display:none; }
+.module-survey input[type="radio"] + label span { display:inline-block; margin:-3px 10px 0 -26px; width:16px; height:16px; border:2px solid #fff; vertical-align:middle; cursor:pointer; -moz-border-radius:50%; border-radius:50%; }
+
+.module-survey input[type="radio"]:checked + label		{ color:#36a9e0; }
+.module-survey input[type="radio"]:checked + label span	{ background-color:#36a9e0; border:2px solid #36a9e0; }
+
+.module-survey input[type="radio"] + label 	{
+  -webkit-transition:color 0.2s linear;
+  -o-transition:color 0.2s linear;
+  -moz-transition:color 0.2s linear;
+  transition:color 0.2s linear;
+}
+.module-survey input[type="radio"] + label	span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+.module-survey .btn-disabled { color:#666; cursor:not-allowed; border:1px solid #666; }
+
+.module-survey .btn-disabled:hover,
+.module-survey .btn-disabled:focus {
+	color: #666 !important;
+	background-color: #000; border:1px solid #666;
+}
+.row_gameinfo_overview_survey .gi_operator_container	{ text-align:center; }
+.row_gameinfo_overview_survey .operator-results			{ font-size:0; }
+.row_gameinfo_overview_survey .operator-result			{ display:inline-block; margin:15px; width:15%; }
+.row_gameinfo_overview_survey .operator-result p		{ font-size:2rem; font-weight:bold; }
+.row_gameinfo_overview_survey .operator-list-item		{ position:relative; display:block; float:none; margin:0; padding:184% 0 0 0; width:100%; }
+.row_gameinfo_overview_survey .operator-result-atk .link-howto,
+.row_gameinfo_overview_survey .operator-result-def .link-howto { width:100%; margin:10px 0 20px 0; }
+
+#survey-restart { display:none !important; }
+body.dev #survey-restart { display:inline-block !important; }
+
+@media (max-width: 767px)
+{
+	.module-survey						{ width:100%; }
+	.survey-question					{ margin:0 40px; }
+	.module-survey label				{ font-size:2rem; }
+	.row_gameinfo_overview_survey .operator-result { width:calc(50% - 30px); }
+}
+
+.row_gameinfo_overview_academy			{ padding: 5.75% 0; background:#0b1222 url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-overview-academy.jpg') 0 50% no-repeat; overflow:hidden;     background-size: 100%;}
+
+
+
+.row_gameinfo_roadmap			{ position:relative; background:#000 url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-y3pass.jpg') 50% 50% no-repeat; background-size:cover; text-align:center; }
+.row_gameinfo_roadmap:after		{ content:""; display:block; position:absolute; left:0; bottom:0; width:100%; height:1px; background:url("https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-row-shape.png") 0 0 no-repeat; }
+.c_gameinfo_roadmap				{ margin:0 auto; padding:6.25% 0; width:75%; }
+
+.gameinfo-roadmap img			{ max-width:100%; }
+.gameinfo-roadmap h1			{ font-size:10rem; }
+.gameinfo-roadmap h2			{ margin:3.125% 0; }
+.gameinfo-roadmap p.subtitle	{ margin:3.125% 0; font-family:'R6S-Light'; font-size:3rem; line-height:1; }
+.gameinfo-roadmap ul			{ padding:0 15%; list-style:square; }
+
+.row_gameinfo_y3pass		{ position:relative; padding:3.75% 0; text-align:center; overflow:hidden; }
+.row_gameinfo_y3pass:after		{ content:""; display:block; position:absolute; left:0; bottom:0; width:100%; height:1px; background:url("https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-row-shape.png") 0 0 no-repeat; }
+
+.c_gameinfo_y3pass			{ margin:0 auto; width:75%; }
+
+.gameinfo-y3pass img				{ max-width:100%; }
+.gameinfo-y3pass h2					{ font-size:10rem; margin:3.125% 0; }
+.gameinfo-y3pass p.subtitle			{ margin:3.125% 0; font-family:'R6S-Light'; font-size:3rem; line-height:1; }
+.gameinfo-y3pass ul					{ margin:3.125% 0; padding:0 15%; list-style:none; text-align:center; }
+.gameinfo-y3pass ul.get-pass		{ margin:30px auto; text-align:center; font-family:'R6S-Light'; }
+.gameinfo-y3pass ul.get-pass li		{ display:inline-block; margin:15px; width:120px; height:60px; }
+.gameinfo-y3pass ul.get-pass li a	{ display:block; width:100%; height:100%; color:#000; font-size:3rem; line-height:60px; /*background-color:#36a9e0;*/ border:1px solid #d6c279; }
+
+.gameinfo-y3pass ul.get-pass li a	{
+	background:#faeeb2;
+	background:-moz-linear-gradient(top, #faeeb2 0%, #a09156 100%);
+	background:-webkit-gradient(left top, left bottom, color-stop(0%, #faeeb2), color-stop(100%, #a09156));
+	background:-webkit-linear-gradient(top, #faeeb2 0%, #a09156 100%);
+	background:-o-linear-gradient(top, #faeeb2 0%, #a09156 100%);
+	background:-ms-linear-gradient(top, #faeeb2 0%, #a09156 100%);
+	background:linear-gradient(to bottom, #faeeb2 0%, #a09156 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#faeeb2', endColorstr='#a09156', GradientType=0 );
+}
+
+.gameinfo-y3pass ul.get-pass li a:hover		{ background:#faeeb2; }
+
+.gameinfo-y3pass-cols:after { content:""; display:block; clear:both; }
+.gameinfo-y3pass-col		{ float:left; width:50%; }
+.gameinfo-y3pass-col p		{ color:#faeeb2; }
+
+.gameinfo-y3pass .asterisk	{ font-size:1.4rem; margin:30px 0 0 0; }
+
+
+
+.row_gameinfo_customization_intro h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.row_gameinfo_customization_intro h2		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.row_gameinfo_customization_intro p		{     margin:3.125% auto 0 auto; font-size:1.6rem; line-height:3rem; width:70%;}
+
+.c_gameinfo_customization_intro			{ margin:0 auto; width:75%; text-align:center; }
+
+
+.row_gameinfo_customization_intro	{ padding:3.75% 0; background:#0d0d0d url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-overview-intro.jpg') 50% 50% no-repeat; background-size:cover; text-align:center; overflow:hidden; }
+
+
+.row_gameinfo_customization_news						{ padding:3.75% 0; background:#0d0d0d url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-home-news-bg.jpg') 50% 50% no-repeat; background-size:cover; overflow:hidden; }
+
+.row_gameinfo_customization_news {
+	display:-ms-flexbox; display:-webkit-box; display:-webkit-flex; display:flex;
+	-ms-flex-direction:row; -webkit-flex-direction:row; flex-direction:row;
+	-ms-flex-pack:center; -webkit-justify-content:center; justify-content:center;
+	-ms-flex-align:flex-start; -webkit-align-items:flex-start; align-items:flex-start;
+}
+
+.c_gameinfo_customization_news_main					{ width:37.5%; padding:15px; }
+.c_gameinfo_customization_news_second						{ width:37.5%; padding:10px; margin-top:80px; }
+
+.gameinfo_customization_news_title				{ margin-bottom:30px; text-align:center; }
+
+.c_gameinfo_customization_news_main .gameinfo_customization_news_item				{ background-color:rgba(0,0,0,0.5); border:1px solid #333740; background:#000; -webkit-transition:border-color .5s ease; transition:border-color .5s ease;  }
+
+.c_gameinfo_customization_news_main .gameinfo_customization_news_item	img					{ display:block; width:100%; max-width:100%; }
+.c_gameinfo_customization_news_main .gameinfo_customization_news_item h3					{ margin:15px 0 0 0; padding:0 15px; color:#fff; }
+.c_gameinfo_customization_news_main .gameinfo_customization_news_item p					{ padding:10px 15px; }
+
+
+.c_gameinfo_customization_news_second .gameinfo_customization_news_item					{
+	position:relative;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	position:relative;
+	margin-bottom:15px;
+	padding:0 15px 0 0;
+	overflow:hidden;
+	border:1px solid #333740;
+	background:#000;
+	-webkit-transition:border-color .5s ease;
+	transition:border-color .5s ease;
+}
+
+.c_gameinfo_customization_news_second .gameinfo_customization_news_item	.news_item_img				{
+	display:inline-flex;width:50%;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	overflow:hidden;
+	margin-right:15px;
+}
+.c_gameinfo_customization_news_second .gameinfo_customization_news_item	.news_item_content				{
+	width:50%;
+	margin:5px auto;
+}
+
+
+.c_gameinfo_customization_news_second .gameinfo_customization_news_item	.news_item_img img				{     max-height:220px;
+	position:relative;
+	left:0;}
+
+
+.c_gameinfo_customization_news_second .gameinfo_customization_news_item h3				{ margin:10px 0; color:#fff; }		
+
+
+
+.row_gameinfo_customization_seasonal_skin	{ padding:3.75% 0; background:#0d0d0d url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-overview-intro.jpg') 50% 50% no-repeat; background-size:cover; text-align:center; overflow:hidden; }
+
+.row_gameinfo_customization_seasonal_skin h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.c_gameinfo_customization_seasonal_skin			{ margin:0 auto;  text-align:center; }
+
+.gameinfo_customization_seasonal_skin_intro 		{ width:75%; margin:0 auto; }
+.gameinfo_customization_seasonal_skin_intro h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_seasonal_skin_intro h2		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_seasonal_skin_intro p		{ margin:3.125% auto; font-size:1.6rem; line-height:3rem; width:70%; }
+
+.gameinfo_customization_seasonal_skin {
+	display:-ms-flexbox; display:-webkit-box; display:-webkit-flex; display:flex;
+	-ms-flex-direction:row; -webkit-flex-direction:row; flex-direction:row;
+	-ms-flex-pack:center; -webkit-justify-content:center; justify-content:center;
+	-ms-flex-align:flex-start; -webkit-align-items:flex-start; align-items:flex-start;
+}
+
+.gameinfo_customization_seasonal_skin_left					{ width:37.5%; padding:15px; }
+.gameinfo_customization_seasonal_skin_right						{ width:37.5%; padding:15px; }
+
+.gameinfo_customization_seasonal_skin_left img,
+.gameinfo_customization_seasonal_skin_right img { display:block; width:100%; max-width:100%; }
+.gameinfo_customization_seasonal_skin_left h3,
+.gameinfo_customization_seasonal_skin_right h3 { margin:15px 0; padding:0 15px; color:#fff;    font-size:5rem; }
+.gameinfo_customization_seasonal_skin_left p,
+.gameinfo_customization_seasonal_skin_right p { margin:3.125% 0; font-size:1.6rem; line-height:3rem; }
+
+
+
+
+.row_gameinfo_customization_elite_skin	{ padding:3.75% 0; background:#0d0d0d url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-overview-intro.jpg') 50% 50% no-repeat; background-size:cover; text-align:center; overflow:hidden; }
+
+.row_gameinfo_customization_elite_skin h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.c_gameinfo_customization_elite_skin			{ margin:0 auto;  text-align:center; }
+
+.gameinfo_customization_elite_skin_intro 		{ width:75%; margin:0 auto; }
+.gameinfo_customization_elite_skin_intro h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_elite_skin_intro h2		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_elite_skin_intro p		{ margin:3.125% auto 0 auto; font-size:1.6rem; line-height:3rem; width:70%; }
+
+.gameinfo_customization_elite_skin {
+	width:75%;
+	padding:15px;
+	margin:0 auto;
+}
+
+.gameinfo_customization_elite_skin img,
+.gameinfo_customization_elite_skin img { display:block; width:100%;     max-width:900px; margin:0 auto; }
+.gameinfo_customization_elite_skin h3,
+.gameinfo_customization_elite_skin h3 { margin:15px 0; padding:0 15px; color:#fff;    font-size:5rem; }
+.gameinfo_customization_elite_skin p,
+.gameinfo_customization_elite_skin p { margin:3.125% auto; font-size:1.6rem; line-height:3rem; width:70%; }
+
+
+.row_gameinfo_customization_proleague_skin	{ padding:3.75% 0; background:#0d0d0d url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-overview-intro.jpg') 50% 50% no-repeat; background-size:cover; text-align:center; overflow:hidden; }
+
+.row_gameinfo_customization_proleague_skin h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.c_gameinfo_customization_proleague_skin			{ margin:0 auto;  text-align:center; }
+
+.gameinfo_customization_proleague_skin_intro 		{ width:75%; margin:0 auto; }
+.gameinfo_customization_proleague_skin_intro h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_proleague_skin_intro h2		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_proleague_skin_intro p		{ margin:0 auto; font-size:1.6rem; line-height:3rem; width:70%;  }
+
+.gameinfo_customization_proleague_skin {
+	width:75%;
+	padding:15px;
+	margin:0 auto;
+}
+
+.gameinfo_customization_proleague_skin img,
+.gameinfo_customization_proleague_skin img { display:block; width:100%;   max-width:900px; margin:0 auto; }
+.gameinfo_customization_proleague_skin h3,
+.gameinfo_customization_proleague_skin h3 { margin:15px 0; padding:0 15px; color:#fff;    font-size:5rem; }
+.gameinfo_customization_proleague_skin p,
+.gameinfo_customization_proleague_skin p { margin:3.125% auto; font-size:1.6rem; line-height:3rem; width:70%; }
+
+.gameinfo_customization_proleague_buy	{ margin-top:3.125%; }
+
+.customization_platorms_links {
+	padding-top:20px;
+}
+
+.customization_platorms_links img {
+	height:100px;
+	width:200px;
+	background-color:rgba(0,0,0, 0.5);
+	margin:0 15px 5px;
+	padding:15px;
+	outline:solid;
+	outline-width:1px;
+	outline-color:white;
+}
+
+.customization_platorms_links img:hover{
+	outline-color:#36a9e0;
+}
+
+.customization_platorms_links a:nth-child(3) img{
+	padding:15px;
+}
+
+
+
+
+.row_gameinfo_customization_credits	{ padding:3.75% 0; background:#0d0d0d url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-overview-intro.jpg') 50% 50% no-repeat; background-size:cover; text-align:center; overflow:hidden; }
+
+.row_gameinfo_customization_credits h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.c_gameinfo_customization_credits			{ margin:0 auto;  text-align:center; }
+
+.gameinfo_customization_credits_intro 		{ width:75%; margin:0 auto; }
+.gameinfo_customization_credits_intro h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_credits_intro h2		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_credits_intro p		{ margin:3.125% auto 0 auto; font-size:1.6rem; line-height:3rem;  }
+
+.gameinfo_customization_credits {
+	width:75%;
+	margin:0 auto;
+}
+
+.gameinfo_customization_credits_left,
+.gameinfo_customization_credits_right {     width:49%;
+	padding:50px;    display:inline-block;
+	vertical-align:top; }
+
+.gameinfo_customization_credits_full						{ display:block; width:100%;  }
+.gameinfo_customization_credits_full img { display:block; width:100%;   max-width:900px; margin:0 auto; }
+
+.gameinfo_customization_credits_left img,
+.gameinfo_customization_credits_right img { display:block; width:100%; max-width:100%;    margin:10px 0; }
+.gameinfo_customization_credits_left h3,
+.gameinfo_customization_credits_right h3 { margin:15px 0; padding:0 15px; color:#fff;    font-size:5rem; }
+.gameinfo_customization_credits_left p,
+.gameinfo_customization_credits_right p {font-size:1.6rem; line-height:3rem; }
+
+
+.gameinfo_customization_credits_buy 		{ width:75%; margin:30px auto; }
+.gameinfo_customization_credits_buy h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_credits_buy h2		{ margin:3.125% 0; font-size:7rem; text-align:center; }
+
+.gameinfo_customization_credits_buy .customization_platorms_links img:hover{
+	outline-color:#9d905b;
+}
+
+
+.row_gameinfo_customization_year_pass	{ padding:3.75% 0; background:#0d0d0d url('https://cdn.hommk.com/pcgame/ubi2015/img/gamezone/r6/u2019/r6-siege-gameinfo-overview-intro.jpg') 50% 50% no-repeat; background-size:cover; text-align:center; overflow:hidden; }
+
+.row_gameinfo_customization_year_pass h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.c_gameinfo_customization_year_pass			{ margin:0 auto;  text-align:center; }
+
+.gameinfo_customization_year_pass_intro 		{ width:75%; margin:3.125% auto; }
+.gameinfo_customization_year_pass_intro h1		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_year_pass_intro h2		{ margin:3.125% 0; font-size:10rem; text-align:center; }
+.gameinfo_customization_year_pass_intro p		{ margin:3.125% auto 0 auto; font-size:1.6rem; line-height:3rem; width:70%; }
+
+.gameinfo_customization_year_pass {
+	width:75%;
+	padding:15px;
+	margin:0 auto;
+}
+
+.gameinfo_customization_year_pass img,
+.gameinfo_customization_year_pass img { display:block; width:100%;max-width:900px; margin:0 auto 3.125% auto; }
+.gameinfo_customization_year_pass h3,
+.gameinfo_customization_year_pass h3 { margin:15px 0; padding:0 15px; color:#fff;    font-size:5rem; }
+.gameinfo_customization_year_pass p,
+.gameinfo_customization_year_pass p {margin:3.125% auto 0 auto; font-size:1.6rem; line-height:3rem;  }
+
+@media (max-width:1540px) {
+
+	.row_gameinfo_customization_news {
+		display:block;
+		-ms-flex-direction:unset; -webkit-flex-direction:unset; flex-direction:unset;
+		-ms-flex-pack:unset; -webkit-justify-content:unset; justify-content:unset;
+		-ms-flex-align:unset; -webkit-align-items:unset; align-items:unset;
+	}
+
+	.c_gameinfo_customization_news_main,
+	.c_gameinfo_customization_news_second { width:80%; margin:0 auto; }
+	.gameinfo_customization_news_item { display:block; width:100%;    max-width:900px;
+		margin:0 auto; }
+
+	.c_gameinfo_customization_news_second .gameinfo_customization_news_item {
+		display:block;
+		padding:0;
+	}
+
+	.c_gameinfo_customization_news_second .gameinfo_customization_news_item .news_item_content { width:100%; }
+
+	.c_gameinfo_customization_news_second .gameinfo_customization_news_item .news_item_content h3 {
+		margin:15px 0 0 0;
+		padding:0 15px;
+	}
+	.c_gameinfo_customization_news_second .gameinfo_customization_news_item .news_item_content p {
+		margin:15px 0 0 0;
+		padding:0 15px;
+	}
+
+	.c_gameinfo_customization_news_second .gameinfo_customization_news_item .news_item_img {     display:block;
+		width:100%;
+		-webkit-box-align:unset;
+		-ms-flex-align:unset;
+		align-items:unset;
+		-webkit-box-pack:unset;
+		-ms-flex-pack:unset;
+		justify-content:unset; }
+
+	.c_gameinfo_customization_news_second .gameinfo_customization_news_item	.news_item_img img {
+		max-height:unset;
+		max-width:100%;    width:100%;
+		height:auto;left:unset;
+	}
+
+}
+
+@media (max-width:1380px) {
+	.interactive-trailer {
+		display: block;
+		width: 70%;
+		margin:15px auto;
+	}
+}
+
+@media (max-width:991px)
+{
+
+	.gameinfo-y3pass-col		{ float:none; width:100%; }
+
+	.row_gameinfo_customization_intro p,
+	.gameinfo_customization_seasonal_skin_intro p,
+	.gameinfo_customization_elite_skin_intro p,
+	.gameinfo_customization_proleague_skin_intro p,
+	.gameinfo_customization_year_pass_intro p 	{ width:100%; }
+
+	.gameinfo_customization_seasonal_skin { display:block;
+		-ms-flex-direction:unset; -webkit-flex-direction:unset; flex-direction:unset;
+		-ms-flex-pack:unset; -webkit-justify-content:unset; justify-content:unset;
+		-ms-flex-align:unset; -webkit-align-items:unset; align-items:unset; }
+
+	.gameinfo_customization_seasonal_skin_left,
+	.gameinfo_customization_seasonal_skin_right { width:80%; margin:0 auto; }
+
+	.gameinfo_customization_credits_left, .gameinfo_customization_credits_right {
+		width:100%;
+		display:block;
+		padding:30px;
+	}
+
+	.customization_platorms_links a 	{ display:block; }
+
+}
+
+@media (max-width:767px)
+{
+
+	.c_gameinfo_roadmap			{ width:90%; }
+	.c_gameinfo_y3pass			{ width:90%; }
+
+	.row_gameinfo_customization_intro h1,
+	.gameinfo_customization_seasonal_skin_intro h1,
+	.gameinfo_customization_elite_skin_intro h1,
+	.gameinfo_customization_proleague_skin_intro h1,
+	.gameinfo_customization_credits_intro h1,
+	.gameinfo_customization_year_pass_intro h1 { font-size:7rem; }
+
+	.gameinfo_customization_seasonal_skin_intro p,
+	.gameinfo_customization_elite_skin_intro p,
+	.gameinfo_customization_proleague_skin_intro p,
+	.gameinfo_customization_year_pass_intro p 	{ width:100%; }
